@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header.component.js"
+import Footer from "./components/footer.component.js"
+import MapPage from "./pages/map.component.js"
+import ContentsPage from "./pages/contents.component.js"
+import TripPage from './pages/trip.component.js'
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>  
+      <Switch>
+        <Route exact path='/' component={ContentsPage} />
+        <Route exact path='/trip/:tripId' component={TripPage} />
+        <Route exact path='/map' component={MapPage} />
+        
+      </Switch>
+      <Footer/>
     </div>
+
   );
 }
 
