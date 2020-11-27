@@ -9,14 +9,16 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Header/>  
-      <Switch>
-        <Route exact path='/' component={ContentsPage} />
-        <Route exact path='/trip/:tripId' component={TripPage} />
-        <Route exact path='/map' component={MapPage} />
-        
-      </Switch>
-      <Footer/>
+      <Header />
+      <div className="contents">
+        <Switch>
+          <Route exact path='/' component={ContentsPage} />
+          <Route exact path='/trip/:tripId' component={TripPage} />
+          <Route exact path='/map' component={MapPage} />
+
+        </Switch>
+      </div>
+      <Footer />
     </div>
 
   );
