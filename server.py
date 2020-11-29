@@ -5,8 +5,11 @@ from flask import Flask, jsonify, request, abort
 from flask_cors import CORS
 from flask.json import JSONEncoder
 import time
+import json
 
-
+f = open("db.json", "r")
+db = json.loads(f.read())
+f.close()
 
 app = Flask(__name__, static_folder='build', static_url_path='')
 CORS(app)
@@ -23,9 +26,8 @@ def favicon():
 @app.route('/get_trip/<trip>', methods=["GET"])
 def get_trip(trip):
     try:
-        f = open("backend-data/trip/" + trip + ".html", "r")
-        data = f.read()
-        f.close()
+        data = db["trips"][trip]
+        print(data)
     except:
         data = ""
     return jsonify({'trip': data})
