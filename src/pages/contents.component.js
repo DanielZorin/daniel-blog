@@ -19,7 +19,7 @@ const ContentsPage = () => {
 
     return <>{
         years.map(year => <>
-            <h2>{year}</h2>
+            <h2><a href={"year/" + year.toString()}>{year}</a></h2>
             {
                 data.filter(entry => entry.year == year).map(entry => <p>
                     <a href={entry.link}>{entry.name}</a>

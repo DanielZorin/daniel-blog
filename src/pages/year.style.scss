@@ -1,0 +1,9 @@
+.gridDisplay {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.tripCard {
+    margin: 5px;
+    padding: 2px
+}

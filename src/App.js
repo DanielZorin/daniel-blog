@@ -4,6 +4,7 @@ import Footer from "./components/footer.component.js"
 import MapPage from "./pages/map.component.js"
 import ContentsPage from "./pages/contents.component.js"
 import TripPage from './pages/trip.component.js'
+import YearPage from './pages/year.component.js'
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
         <Switch>
           <Route exact path='/' component={ContentsPage} />
           <Route exact path='/trip/:tripId' component={TripPage} />
+          <Route exact path='/year/:year' component={YearPage} />
           <Route exact path='/map' component={MapPage} />
-
         </Switch>
       </div>
       <Footer />
