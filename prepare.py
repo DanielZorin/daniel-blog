@@ -47,15 +47,55 @@ def prepare_contents():
         if tag.name == "h2":
             cur_year = int(tag.string)
         if tag.name == "p":
-            p = "".join([str(s) for s in tag.contents]).strip()
+            name = "".join([str(s) for s in tag.contents]).strip()
+            link = ""
             for child in tag.children:
                 if child.name == "a":
                     link = child["href"]
-                    p = "".join([str(s) for s in child.contents]).strip()
-            entry = {"year": cur_year, "name": p, "link": link, "id": link.split("/")[1]}
+                    name = "".join([str(s) for s in child.contents]).strip()
+            try:
+                country = name.split(":")[0]
+            except:
+                country = ""
+                print(name)
+            entry = {"year": cur_year, "name": name, "link": link, "id": link.split("/")[1] if link else "", "country_rus": country}
             entry["preview"] = get_preview(entry["id"])
+            try:
+                entry["country_eng"] = country_names[entry["country_rus"]]
+            except:
+                pass
             result.append(entry)
     return result
+    
+    
+def prepare_list():
+    f = open("backend-data/country-list.html", "r", encoding="utf-8")
+    contents = f.read()
+    f.close()
+    soup = BeautifulSoup(contents, 'html.parser')
+    result = {}
+    for tag in soup:
+        if tag.name == "div":
+            for child in tag.children:
+                if child.name == "b":
+                    txt = "".join([str(s) for s in child.contents]).strip()
+                    rus_name = txt.replace(":", "")
+                    try:
+                        eng_name = child["id"]
+                        result[rus_name] = eng_name
+                    except:
+                        pass
+    
+    for link in links:
+        contents = contents.replace(link, "<a href=\"" + links[link] + "\">" + link + "</a>")
+        
+    f = open("tmp.html", "w", encoding="utf-8")
+    f.write(contents)
+    f.close()  
+    return result
+
+country_names = prepare_list()
+print(country_names)
 
 trip_data = {}
 for trip in os.listdir("backend-data/trip"):
@@ -72,12 +112,3 @@ f.close()
 
 ################################################
 
-f = open("backend-data/country-list.html", "r", encoding="utf-8")
-contents = f.read()
-f.close()
-for link in links:
-    contents = contents.replace(link, "<a href=\"" + links[link] + "\">" + link + "</a>")
-    
-f = open("tmp.html", "w", encoding="utf-8")
-f.write(contents)
-f.close()  
