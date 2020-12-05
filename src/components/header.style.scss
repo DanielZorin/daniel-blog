@@ -7,7 +7,8 @@
     display: flex;
 
     li {
-      margin: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
 
       a {
         text-decoration: none;
@@ -43,6 +44,8 @@
 }
 
 footer {
+  position: fixed;
+  bottom: 0px;
   font-size: 12px;
   bottom: 0;
   width: 100%;

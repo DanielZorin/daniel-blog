@@ -3,7 +3,7 @@ import './header.style.scss'
 
 function Footer() {
     return (<footer>
-        <div class="footer-copyright text-center">
+        <div className="footer">
             Footer goes here
         </div>
     </footer>)

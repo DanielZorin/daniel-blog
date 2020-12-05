@@ -1,17 +1,14 @@
 import React from 'react';
-import axios from 'axios';
-
-/* For local debugging set to 1 */
-const DEBUG = 1;
-
-/* Debug variables.*/
-const PREFIX = DEBUG ? "http://localhost:80" : "";
+import { store } from '../redux/store'
+import { fetchContents } from '../redux/actions'
+import { useSelector } from 'react-redux'
+import { selectAllPosts } from '../redux/selectors.js'
 
 const ContentsPage = () => {
-    const [data, setData] = React.useState(null)
-    
-    React.useEffect(() => axios.get(PREFIX + "/get_index").then(res => {setData(res.data.trip)}), []);
-    console.log(data);
+    let data = useSelector(selectAllPosts);
+
+    React.useEffect(() => store.dispatch(fetchContents()), []);
+
     return <div dangerouslySetInnerHTML={{__html: data}}></div>;
 } 
 
