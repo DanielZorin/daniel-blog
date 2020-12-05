@@ -9,7 +9,25 @@ const ContentsPage = () => {
 
     React.useEffect(() => store.dispatch(fetchContents()), []);
 
-    return <div dangerouslySetInnerHTML={{__html: data}}></div>;
-} 
+    console.log(data, typeof data)
+    let years = []
+    if (data) {
+        years =  data.map(trip => trip.year);
+        years = [...new Set(years)];
+        years = years.sort().reverse();
+    }
+
+    return <>{
+        years.map(year => <>
+            <h2>{year}</h2>
+            {
+                data.filter(entry => entry.year == year).map(entry => <p>
+                    <a href={entry.link}>{entry.name}</a>
+                </p>)
+            }
+        </>)
+
+    }</>
+}
 
 export default ContentsPage;

@@ -35,9 +35,11 @@ def get_trip(trip):
 
 @app.route('/get_index', methods=["GET"])
 def get_index():
-    f = open("backend-data/index.html", "r", encoding='utf-8')
-    data = f.read()
-    f.close()
+    try:
+        data = db["contents"]
+        print(data)
+    except:
+        data = ""
     return jsonify({'trip': data})
 
 if __name__ == "__main__":
