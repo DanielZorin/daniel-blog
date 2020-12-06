@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { store } from '../redux/store'
 import { fetchContents } from '../redux/actions'
 import { useSelector } from 'react-redux'
@@ -19,10 +20,10 @@ const ContentsPage = () => {
 
     return <>{
         years.map(year => <>
-            <h2><a className="yearLink" href={"year/" + year.toString()}>{year}</a></h2>
+            <h2><Link className="yearLink" to={"year/" + year.toString()}>{year}</Link></h2>
             {
                 data.filter(entry => entry.year == year).map(entry => <p>
-                    <a className="tripLink" href={entry.link}>{entry.name}</a>
+                    <Link className="tripLink" to={entry.link}>{entry.name}</Link>
                 </p>)
             }
         </>)

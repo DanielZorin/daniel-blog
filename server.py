@@ -9,15 +9,20 @@ import json
 
 import prepare
 
-f = open("db.json", "r")
+'''f = open("db.json", "r")
 db = json.loads(f.read())
-f.close()
+f.close()'''
+db = prepare.db
 
 app = Flask(__name__, static_folder='build', static_url_path='')
 CORS(app)
 
 @app.route('/', methods=["GET"])
 def index():
+    return app.send_static_file('index.html')
+
+@app.errorhandler(404)
+def not_found(e):
     return app.send_static_file('index.html')
 
 # ====================================== GET METHODS ==================================================

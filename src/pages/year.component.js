@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { useParams } from "react-router-dom";
 import { store } from '../redux/store'
 import { fetchContents } from '../redux/actions'
@@ -16,10 +17,10 @@ const YearPage = () => {
         {
         data.map(entry => 
             <div className="tripCard">
-                <a href={"../" + entry.link}>
+                <Link to={"../" + entry.link}>
                     <img src={entry.preview} width="200px"/>
                     <div class="tripName">{entry.name}</div>
-                </a>
+                </Link>
             </div>)
         }
         </div>
