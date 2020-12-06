@@ -20,10 +20,6 @@ CORS(app)
 def index():
     return app.send_static_file('index.html')
 
-@app.route('/favicon.ico', methods=["GET"])
-def favicon():
-    return app.send_static_file('favicon.ico')
-
 # ====================================== GET METHODS ==================================================
 @app.route('/get_trip/<trip>', methods=["GET"])
 def get_trip(trip):
