@@ -5,5 +5,19 @@
 
 .tripCard {
     margin: 5px;
-    padding: 2px
+    padding: 2px;
+}
+
+.tripName {
+    color: #242221;
+    font-weight: 500;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+.tripCard:hover .tripName {
+    color: red
 }

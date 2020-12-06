@@ -27,7 +27,6 @@ def favicon():
 def get_trip(trip):
     try:
         data = db["trips"][trip]
-        print(data)
     except:
         data = ""
     return jsonify({'trip': data})
@@ -37,7 +36,14 @@ def get_trip(trip):
 def get_index():
     try:
         data = db["contents"]
-        print(data)
+    except:
+        data = ""
+    return jsonify({'trip': data})
+    
+@app.route('/get_country_list', methods=["GET"])
+def get_country_list():
+    try:
+        data = db["country_list"]
     except:
         data = ""
     return jsonify({'trip': data})

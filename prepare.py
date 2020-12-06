@@ -73,18 +73,29 @@ def prepare_list():
     contents = f.read()
     f.close()
     soup = BeautifulSoup(contents, 'html.parser')
-    result = {}
+    names = {}
+    result = []
     for tag in soup:
         if tag.name == "div":
             for child in tag.children:
+                cities = ""
                 if child.name == "b":
                     txt = "".join([str(s) for s in child.contents]).strip()
                     rus_name = txt.replace(":", "")
                     try:
                         eng_name = child["id"]
-                        result[rus_name] = eng_name
+                        names[rus_name] = eng_name
                     except:
                         pass
+                else:
+                    if "," in child:
+                        cities = child.split(",")
+                        cities = [s.strip() for s in cities]
+                    elif child:
+                        if child.strip():
+                            cities = [child.strip()]
+            result.append({"eng_name": eng_name, "rus_name": rus_name, "cities": cities})
+            print(eng_name, cities)
     
     for link in links:
         contents = contents.replace(link, "<a href=\"" + links[link] + "\">" + link + "</a>")
@@ -92,9 +103,9 @@ def prepare_list():
     f = open("tmp.html", "w", encoding="utf-8")
     f.write(contents)
     f.close()  
-    return result
+    return names, result
 
-country_names = prepare_list()
+country_names, country_list = prepare_list()
 print(country_names)
 
 trip_data = {}
@@ -105,10 +116,7 @@ for trip in os.listdir("backend-data/trip"):
     
 entries = prepare_contents()
     
-db = {"links": links, "trips": trip_data, "contents": entries}
+db = {"links": links, "trips": trip_data, "contents": entries, "country_list": country_list}
 f = open("db.json", "w")
 f.write(json.dumps(db))
 f.close()
-
-################################################
-

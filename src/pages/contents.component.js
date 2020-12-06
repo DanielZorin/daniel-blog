@@ -3,13 +3,13 @@ import { store } from '../redux/store'
 import { fetchContents } from '../redux/actions'
 import { useSelector } from 'react-redux'
 import { selectAllPosts } from '../redux/selectors.js'
+import './contents.style.scss'
 
 const ContentsPage = () => {
     let data = useSelector(selectAllPosts);
 
     React.useEffect(() => store.dispatch(fetchContents()), []);
 
-    console.log(data, typeof data)
     let years = []
     if (data) {
         years =  data.map(trip => trip.year);
@@ -19,10 +19,10 @@ const ContentsPage = () => {
 
     return <>{
         years.map(year => <>
-            <h2><a href={"year/" + year.toString()}>{year}</a></h2>
+            <h2><a className="yearLink" href={"year/" + year.toString()}>{year}</a></h2>
             {
                 data.filter(entry => entry.year == year).map(entry => <p>
-                    <a href={entry.link}>{entry.name}</a>
+                    <a className="tripLink" href={entry.link}>{entry.name}</a>
                 </p>)
             }
         </>)

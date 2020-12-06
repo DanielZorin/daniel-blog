@@ -15,6 +15,11 @@ const fetchPostSuccess = tripData => ({
     payload: { tripData }
 })
 
+const fetchCountryListSuccess = countryList => ({
+    type: 'FETCH_COUNTRY_LIST_SUCCESS',
+    payload: { countryList }
+})
+
 /*asynchronous thunk action creator
   calls the api, then dispatches the synchronous action creator
 */
@@ -38,6 +43,18 @@ export const fetchPost =  (tripId) => {
         }
         catch(e){
             console.log(e)
+        }
+    }
+}
+
+export const fetchCountryListContents =  () => {
+    return async dispatch => {
+        try {
+            let posts = await axios.get(URL_PREFIX + "/get_country_list").then(res => res.data.trip)
+            dispatch(fetchCountryListSuccess(posts))
+        }
+        catch(e){
+            console.log("ERROR IN DISPATCH " + e)
         }
     }
 }

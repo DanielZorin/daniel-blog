@@ -7,3 +7,5 @@ export const selectPostsByCountry = (state, country) => state.posts.filter(
     entry => entry.country_eng === country)
 
 export const selectCurrentPost = state => state.tripData
+
+export const selectCountryList = state => state.countryList

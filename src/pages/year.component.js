@@ -18,7 +18,7 @@ const YearPage = () => {
             <div className="tripCard">
                 <a href={"../" + entry.link}>
                     <img src={entry.preview} width="200px"/>
-                    <div>{entry.name}</div>
+                    <div class="tripName">{entry.name}</div>
                 </a>
             </div>)
         }

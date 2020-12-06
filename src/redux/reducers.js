@@ -1,4 +1,4 @@
-const INITIAL_STATE = {posts: [], tripData: undefined};
+const INITIAL_STATE = {posts: [], tripData: undefined, countryList: []};
 
 const postsReducer = (state = INITIAL_STATE , action) => {
 
@@ -7,6 +7,8 @@ const postsReducer = (state = INITIAL_STATE , action) => {
             return {...state, posts: action.payload.posts}
         case 'FETCH_POST_SUCCESS':
             return {...state, tripData: action.payload.tripData}
+        case 'FETCH_COUNTRY_LIST_SUCCESS':
+            return {...state, countryList: action.payload.countryList}
         default:
             return state
     }
