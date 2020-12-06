@@ -7,6 +7,8 @@ from flask.json import JSONEncoder
 import time
 import json
 
+import prepare
+
 f = open("db.json", "r")
 db = json.loads(f.read())
 f.close()
