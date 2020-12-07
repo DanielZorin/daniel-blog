@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 /* For local debugging set to 1 */
-const DEBUG = 1;
+const DEBUG = 0;
 const URL_PREFIX = DEBUG ? "http://localhost:80" : "";
 
 //synchronous action creator
