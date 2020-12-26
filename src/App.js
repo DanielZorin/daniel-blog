@@ -22,6 +22,8 @@ function App() {
           <Route exact path='/country/:countryId' component={CountryPage} />
           <Route exact path='/map' component={MapPage} />
           <Route exact path='/list' component={CountryListPage} />
+          <Route exact path='/plans' component={PlansPage} />
+          <Route exact path='/contacts' component={ContactsPage} />
         </Switch>
       </div>
     </div>

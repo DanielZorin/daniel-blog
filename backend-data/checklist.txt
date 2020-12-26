@@ -1,24 +1,13 @@
-Voronezh
+Sochi
+Sochi-2
+Nevyansk
+Nizhni Tagil
+Verkhoturye
+EKB-1
+EKB-2
 ==========================
-Moscow-2020-Nekrasovka
-Moscow-2020-Butovo
-Moscow-2020-NE-1
-Moscow-2020-NE-2
-Moscow-2020-E
-Moscow-2020-SE
-Moscow-2020-S-1
-Moscow-2020-S-2
-Moscow-2020-SW
-Moscow-2020-W-1
-Moscow-2020-W-2
-Moscow-2020-NW
-Moscow-2020-N-1
-Moscow-2020-N-2
-Moscow-2020-Zelenograd
-Moscow-2020-Kommunarka
-Moscow-2020-Sherbinka
-Moscow-2020-Troitsk
-Moscow-2020-Kokoshkino
+Voronezh
+Voronezh-2
 
 UK2001
 Guernsey
