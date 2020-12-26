@@ -7,7 +7,10 @@ import TripPage from './pages/trip.component.js'
 import YearPage from './pages/year.component.js'
 import CountryPage from './pages/country.component.js'
 import CountryListPage from './pages/country-list.component.js'
+import PlansPage from './pages/plans.component.js';
+import ContactsPage from './pages/contacts.component.js';
 import { Switch, Route, Redirect } from 'react-router-dom';
+
 
 function App() {
   return (
