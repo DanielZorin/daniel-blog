@@ -1,8 +1,7 @@
 import axios from 'axios'
 
-/* For local debugging set to 1 */
-const DEBUG = 0;
-const URL_PREFIX = DEBUG ? "http://localhost:80" : "";
+
+const URL_PREFIX = process.env.REACT_APP_URL_PREFIX;
 
 //synchronous action creator
 const fetchContentsSuccess = posts => ({

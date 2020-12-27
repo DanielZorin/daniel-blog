@@ -100,9 +100,9 @@ def prepare_list():
     for link in links:
         contents = contents.replace(link, "<a href=\"" + links[link] + "\">" + link + "</a>")
         
-    f = open("tmp.html", "w", encoding="utf-8")
-    f.write(contents)
-    f.close()  
+    #f = open("tmp.html", "w", encoding="utf-8")
+    #f.write(contents)
+    #f.close()  
     return names, result
 
 country_names, country_list = prepare_list()
