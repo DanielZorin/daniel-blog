@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 
-const URL_PREFIX = process.env.REACT_APP_URL_PREFIX;
+const URL_PREFIX = process.env.REACT_APP_URL_PREFIX ? process.env.REACT_APP_URL_PREFIX : "";
 
 //synchronous action creator
 const fetchContentsSuccess = posts => ({
