@@ -9,10 +9,10 @@ import json
 
 import prepare
 
-'''f = open("db.json", "r")
+f = open("db.json", "r")
 db = json.loads(f.read())
-f.close()'''
-db = prepare.db
+f.close()
+#db = prepare.db
 
 app = Flask(__name__, static_folder='build', static_url_path='')
 CORS(app)
@@ -50,6 +50,21 @@ def get_country_list():
     except:
         data = ""
     return jsonify({'trip': data})
+    
+@app.route('/search/<query>', methods=["GET"])
+def get_search(query):
+    try:
+        data = db["trips"]
+        result = []
+        for trip in data:
+            for c in data[trip]["content"]:
+                if not c["type"] in ["text", "section"]:
+                    continue
+                if "src" in c and query.lower() in c["src"].lower():
+                    result.append({"url": trip, "title": data[trip]["title"], "string": c["src"].replace(query.lower(), "<b>" + query.lower() + "</b>")})
+    except:
+        result = []
+    return jsonify({'result': result})
 
 if __name__ == "__main__":
     # Only for debugging while developing

@@ -22,6 +22,8 @@ def load_trip(name):
             result["content"].append({"type": "section", "src": tag.string})
         if tag.name == "img":
             result["content"].append({"type": "image", "src": tag["src"]})
+        if tag.name == "center":
+            result["content"].append({"type": "separator"})
         if tag.name == "p":
             p = "".join([str(s) for s in tag.contents]).strip()
             result["content"].append({"type": "text", "src": p})
@@ -105,18 +107,19 @@ def prepare_list():
     #f.close()  
     return names, result
 
-country_names, country_list = prepare_list()
-print(country_names)
+if __name__ == "__main__":
+    country_names, country_list = prepare_list()
+    print(country_names)
 
-trip_data = {}
-for trip in os.listdir("backend-data/trip"):
-    data = load_trip(trip)
-    index = trip.replace(".html", "")
-    trip_data[index] = data  
-    
-entries = prepare_contents()
-    
-db = {"links": links, "trips": trip_data, "contents": entries, "country_list": country_list}
-f = open("db.json", "w")
-f.write(json.dumps(db))
-f.close()
+    trip_data = {}
+    for trip in sorted(os.listdir("backend-data/trip")):
+        data = load_trip(trip)
+        index = trip.replace(".html", "")
+        trip_data[index] = data  
+        
+    entries = prepare_contents()
+        
+    db = {"links": links, "trips": trip_data, "contents": entries, "country_list": country_list}
+    f = open("db.json", "w")
+    f.write(json.dumps(db))
+    f.close()

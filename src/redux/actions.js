@@ -1,6 +1,5 @@
 import axios from 'axios'
 
-
 const URL_PREFIX = process.env.REACT_APP_URL_PREFIX ? process.env.REACT_APP_URL_PREFIX : "";
 
 //synchronous action creator
@@ -17,6 +16,11 @@ const fetchPostSuccess = tripData => ({
 const fetchCountryListSuccess = countryList => ({
     type: 'FETCH_COUNTRY_LIST_SUCCESS',
     payload: { countryList }
+})
+
+const fetchSearchResultsSuccess = data => ({
+    type: 'FETCH_SEARCH_RESULTS_SUCCESS',
+    payload: { searchResults: data }
 })
 
 /*asynchronous thunk action creator
@@ -51,6 +55,18 @@ export const fetchCountryListContents =  () => {
         try {
             let posts = await axios.get(URL_PREFIX + "/get_country_list").then(res => res.data.trip)
             dispatch(fetchCountryListSuccess(posts))
+        }
+        catch(e){
+            console.log("ERROR IN DISPATCH " + e)
+        }
+    }
+}
+
+export const fetchSearchResults =  (query) => {
+    return async dispatch => {
+        try {
+            let posts = await axios.get(URL_PREFIX + "/search/" + query).then(res => res.data.result)
+            dispatch(fetchSearchResultsSuccess(posts))
         }
         catch(e){
             console.log("ERROR IN DISPATCH " + e)

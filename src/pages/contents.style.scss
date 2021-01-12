@@ -4,14 +4,20 @@
 }
 
 .yearLink:hover {
-    color:red;
+    color: red;
 }
 
 .tripLink {
-    color:black;
+    color: black;
     text-decoration: none;
 }
 
 .tripLink:hover {
-    color:red;
+    color: red;
+}
+
+.searchResultText {
+    color: black;
+    font-size: 80%;
+    font-style: italic;
 }

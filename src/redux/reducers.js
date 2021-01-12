@@ -1,14 +1,16 @@
-const INITIAL_STATE = {posts: [], tripData: undefined, countryList: []};
+const INITIAL_STATE = { posts: [], tripData: undefined, countryList: [], searchResults: [] };
 
-const postsReducer = (state = INITIAL_STATE , action) => {
+const postsReducer = (state = INITIAL_STATE, action) => {
 
-    switch(action.type) {
+    switch (action.type) {
         case 'FETCH_CONTENTS_SUCCESS':
-            return {...state, posts: action.payload.posts}
+            return { ...state, posts: action.payload.posts }
         case 'FETCH_POST_SUCCESS':
-            return {...state, tripData: action.payload.tripData}
+            return { ...state, tripData: action.payload.tripData }
         case 'FETCH_COUNTRY_LIST_SUCCESS':
-            return {...state, countryList: action.payload.countryList}
+            return { ...state, countryList: action.payload.countryList }
+        case 'FETCH_SEARCH_RESULTS_SUCCESS':
+            return { ...state, searchResults: action.payload.searchResults }
         default:
             return state
     }

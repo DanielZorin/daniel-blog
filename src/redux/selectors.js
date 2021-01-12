@@ -9,3 +9,5 @@ export const selectPostsByCountry = (state, country) => state.posts.filter(
 export const selectCurrentPost = state => state.tripData
 
 export const selectCountryList = state => state.countryList
+
+export const selectSearchResults = state => state.searchResults

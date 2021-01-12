@@ -10,6 +10,7 @@ import CountryListPage from './pages/country-list.component.js'
 import PlansPage from './pages/plans.component.js';
 import ContactsPage from './pages/contacts.component.js';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import SearchPage from './pages/search.component';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route exact path='/list' component={CountryListPage} />
           <Route exact path='/plans' component={PlansPage} />
           <Route exact path='/contacts' component={ContactsPage} />
+          <Route exact path='/search/:query' component={SearchPage} />
         </Switch>
       </div>
     </div>
