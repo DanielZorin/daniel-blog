@@ -1,1 +1,1 @@
-web: gunicorn server:app
+web: python prepare.py && gunicorn server:app
