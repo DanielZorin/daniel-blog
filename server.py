@@ -61,7 +61,7 @@ def get_search(query):
                 if not c["type"] in ["text", "section"]:
                     continue
                 if "src" in c and query.lower() in c["src"].lower():
-                    result.append({"url": trip, "title": data[trip]["title"], "string": c["src"].replace(query.lower(), "<b>" + query.lower() + "</b>")})
+                    result.append({"url": trip, "title": data[trip]["title"], "string": c["src"].replace(query.lower(), "<b>" + query.lower() + "</b>").replace(query, "<b>" + query.lower() + "</b>")})
     except:
         result = []
     return jsonify({'result': result})
