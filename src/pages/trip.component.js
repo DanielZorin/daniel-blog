@@ -27,6 +27,8 @@ const TripPage = () => {
                             return <img class="trip-photo" src={e.src} />
                         case "section":
                             return <h2>{e.src}</h2>
+                        case "separator":
+                            return <center> * * * </center>
                     }
                     return "";
                 }
