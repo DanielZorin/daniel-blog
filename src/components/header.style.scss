@@ -14,13 +14,32 @@
   }
 }
 
+@media screen and (max-width: 64em) {
+  .menu {
+    margin: 0px;
+    background: #f9f9f9;
+    padding: 0px;
+  
+    .menuItems {
+      list-style: none;
+      display: block;
+  
+      li {
+        float: left;
+        background: #f9f9f9;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
 .menuLink {
   position: relative;
   text-decoration: none;
   color: #8f8f8f;
   font-size: 24px;
   font-weight: bold;
-  position: relative;
   text-transform: uppercase;
 
   transition: 0.2s ease color;
