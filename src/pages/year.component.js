@@ -18,7 +18,7 @@ const YearPage = () => {
         data.map(entry => 
             <div className="tripCard">
                 <Link to={"../" + entry.link}>
-                    <img src={entry.preview} width="200px"/>
+                    <img src={entry.preview} class="tripImage" />
                     <div class="tripName">{entry.name}</div>
                 </Link>
             </div>)

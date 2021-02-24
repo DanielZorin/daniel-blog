@@ -3,9 +3,24 @@
     grid-template-columns: repeat(5, 1fr);
 }
 
+@media screen and (max-width: 64em) {
+    .gridDisplay {
+        display: block;
+    }
+}
+
 .tripCard {
     margin: 5px;
     padding: 2px;
+    display: block;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.tripImage {
+    width: 200px;
 }
 
 .tripName {
@@ -13,9 +28,9 @@
     font-weight: 500;
     -webkit-transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
-    display: inline-block;
     text-decoration: none;
     position: relative;
+    width: 200px;
 }
 
 .tripCard:hover .tripName {
