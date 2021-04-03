@@ -14,15 +14,23 @@ const CountryPage = () => {
 
     return <div className="gridDisplay">
         {
-        data.map(entry => 
-            <div className="tripCard">
-                <a href={"../" + entry.link}>
-                    <img src={entry.preview} width="200px"/>
-                    <div class="tripName">{entry.name}</div>
-                </a>
-            </div>)
+            data.map(entry =>
+                <div className="tripCard">
+                    {
+                        entry.link ?
+                            <a href={"../" + entry.link}>
+                                <img src={entry.preview} width="200px" />
+                                <div class="tripName">{entry.name}</div>
+                            </a>
+                            :
+                            <>
+                                <img src={entry.preview} width="200px" />
+                                <div class="tripNameFuture">{entry.name}</div>
+                            </>
+                    }
+                </div>)
         }
-        </div>
+    </div>
 }
 
 export default CountryPage;

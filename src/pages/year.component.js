@@ -15,15 +15,24 @@ const YearPage = () => {
 
     return <div className="gridDisplay">
         {
-        data.map(entry => 
-            <div className="tripCard">
-                <Link to={"../" + entry.link}>
-                    <img src={entry.preview} class="tripImage" />
-                    <div class="tripName">{entry.name}</div>
-                </Link>
-            </div>)
+            data.map(entry =>
+                <div className="tripCard">
+                    {
+                        entry.link ?
+                            <Link to={"../" + entry.link}>
+                                <img src={entry.preview} class="tripImage" />
+                                <div class="tripName">{entry.name}</div>
+                            </Link>
+                            :
+                            <>
+                                <img src={entry.preview} class="tripImage" />
+                                <div class="tripNameFuture">{entry.name}</div>
+                            </>
+
+                    }
+                </div>)
         }
-        </div>
+    </div>
 }
 
 export default YearPage;

@@ -13,7 +13,7 @@ const ContentsPage = () => {
 
     let years = []
     if (data) {
-        years =  data.map(trip => trip.year);
+        years = data.map(trip => trip.year);
         years = [...new Set(years)];
         years = years.sort().reverse();
     }
@@ -23,7 +23,11 @@ const ContentsPage = () => {
             <h2><Link className="yearLink" to={"year/" + year.toString()}>{year}</Link></h2>
             {
                 data.filter(entry => entry.year == year).map(entry => <p>
-                    <Link className="tripLink" to={entry.link}>{entry.name}</Link>
+                    {
+                        entry.link ?
+                            <Link className="tripLink" to={entry.link}>{entry.name}</Link>
+                            : <span className="tripLinkFuture">{entry.name}</span>
+                    }
                 </p>)
             }
         </>)
