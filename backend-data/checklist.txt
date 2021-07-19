@@ -1,167 +1,58 @@
-Sochi
-Sochi-2
-Nevyansk
-Nizhni Tagil
-Verkhoturye
-EKB-1
-EKB-2
+Sao Paulo-Centro
+Sao Paulo-Paulista
+Sao Paulo-Aero
+Sao Paulo-Morumbi
+Santos
+Rio de Janeiro-Copacabana
+Rio de Janeiro-Centro
+Rio de Janeiro-Tijuca
+Rio de Janeiro-Rocinha
+Rio de Janeiro-Paqueta
+Rio de Janeiro-aero
+Food-Brazil
+Manaus
+Manaus-2
+Amazonas
+Santarem
+Belem
+Brasilia
+Brasilia-2
+Alto Paraiso
+Chapada dos Veadeiros
+Cuiaba
+Chapada dos Guimaraes
+Campo Grande
+Bonito-1
+Bonito-2
+Dourados
+Ubatuba
+Paraty
+Vitoria
+Minsk
 ==========================
-Voronezh
-Voronezh-2
-
-UK2001
-Guernsey
-Jersey
-Isle of Man
-Dublin
-food-Ireland
-Malahide
-Kilkenny
-Waterford
-Cork
-Killarney
-Ring of Kerry
-Limerick
-Galway
-Cliffs of Moher
-Sligo
-Newgrange
-Slane
-Glendalough
-Salisbury
-Southampton
-Birmingham
-Cardiff
-Bath
-Bristol
-Londonderry
-Giants causeway
-Belfast
-Manchester
-Liverpool
-food-UK
-London
-London-2
-London-3
-London-4
-Windsor
-Oxford
-Cambridge
-Edinburgh
-Glasgow
-Loch Ness
-Newcastle
-Hexham
-Durham
-York
-Newark
-Dover
-Canterbury
-
-Barcelona
-Barcelona-2
-Palma de Mallorca
-Soller
-Girona
-A Coruna
-Santiago de Compostela
-Gran Canaria
-Lanzarote-1
-Lanzarote-2
-Lanzarote-3
-Puerto de la Cruz
-La Laguna
 Santa Cruz
-Teide
-La Orotava
-Barcelona
-Prague
-Plzen
-Kutna Hora
-Cesky Krumlov
-Brno
-Trencin
-Bratislava
-Eindhoven
-Hertogenbosch
-Utrecht
-Amsterdam
-Belgrade
-Martigny
-Sion
-Zermatt
-Brig
-Thun
-Interlaken
-Lauterbrunnen
-Bern
-Fribourg
-Lausanne
-Geneve
-Lyon
-Lyon-2
-Annecy
-Chamonix
-Dijon
-Amiens
-Rouen
-Paris
-Paris-2
-food-France
+Sucre
+Potosi
+Uyuni Road
+Uyuni
+Salar de Uyuni
+Oruro
+Copacabana
+Yumani
+Coroico
+La Paz
+La Paz-2
+La Paz-3
+La Paz-4
+La Paz-5
 
-Bangkok-2019
-Nonthaburi
-Singapore-2019
-Bali-Denpasar
-Bali-Lovina
-Bali-Singaraja
-Bali-Munduk
-Bali-Bedugul
-Bali-Uluwatu
-Banda Aceh
-Sabang
-Langkawi
-Tanah Rata
-Tanah Rata-2
-KL-1
-KL-2
-KL-3
-KL-4
-KL-5
-KL-6
-food-Malaysia
-food-Malaysia-2
-Hong Kong-1
-Hong Kong-2
-Hong Kong-3
-Macau-1
-Macau-2
-Seoul-1
-Seoul-2
-Incheon
-
-Narita
-Chiba
-Saitama
-Gotemba
-Odawara
-Osaka-2020
-Tokyo-1
-Tokyo-2
-Okinawa-1
-Okinawa-2
-Okinawa-3
-Okinawa-4
-Taipei
-Taipei-2
-Hsinchu
-Taoyuan
-Jiufen
-Keelung
-Yehliu
-KL-2020
-Ao Nang
-Phi Phi
-Phi Phi-2
-Phi Phi-3
-Krabi
+Salvador
+Salvador-2
+Aracaju
+Sao Cristovao
+Maceio
+Joao Pessoa
+Natal
+Recife
+Recife-2
+Olinda
