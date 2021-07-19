@@ -13,6 +13,11 @@ const fetchPostSuccess = tripData => ({
     payload: { tripData }
 })
 
+const resetCurrentPost = () => ({
+    type: 'RESET_POST',
+    payload: { }
+})
+
 const fetchCountryListSuccess = countryList => ({
     type: 'FETCH_COUNTRY_LIST_SUCCESS',
     payload: { countryList }
@@ -41,6 +46,7 @@ export const fetchContents =  () => {
 export const fetchPost =  (tripId) => {
     return async dispatch => {
         try {
+            dispatch(resetCurrentPost())
             let tripData = await axios.get(URL_PREFIX + "/get_trip/" + tripId).then(res => res.data.trip)
             dispatch(fetchPostSuccess(tripData))
         }
