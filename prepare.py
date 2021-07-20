@@ -107,6 +107,16 @@ def prepare_list():
     #f.close()  
     return names, result
 
+def generate_sitemap():
+    res = ["", "map", "list", "plans", "contacts"]
+    for trip in sorted(os.listdir("backend-data/trip")):
+        index = trip.replace(".html", "")
+        res.append("trip/" + index)
+    res = ["http://www.danielzorin.ml/" + s for s in res]
+    f = open("./public/sitemap.txt", "w")
+    f.write("\n".join(res))
+    f.close()
+
 if __name__ == "__main__":
     country_names, country_list = prepare_list()
     print(country_names)
@@ -123,3 +133,5 @@ if __name__ == "__main__":
     f = open("db.json", "w")
     f.write(json.dumps(db))
     f.close()
+    
+    generate_sitemap()
