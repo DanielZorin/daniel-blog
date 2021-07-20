@@ -14,12 +14,13 @@ import SearchPage from './pages/search.component';
 
 
 function App() {
+  const reload = () => window.location.reload();
   return (
-    
     <div className="App">
       <Header />
       <div className="contents">
         <Switch>
+          <Route path="/sitemap.txt" onEnter={reload} />
           <Route exact path='/' component={ContentsPage} />
           <Route exact path='/trip/:tripId' component={TripPage} />
           <Route exact path='/year/:year' component={YearPage} />
