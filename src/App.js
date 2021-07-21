@@ -23,6 +23,7 @@ function App() {
   useEffect(() => {
     if (ga) {
       ga.pageview(location.pathname + location.search);
+      ga.gtag('event', 'pageview', location.pathname + location.search)
       console.log(location.pathname + location.search)
     }
   }, [location, ga]);
