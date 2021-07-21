@@ -30,7 +30,7 @@ const TripPage = () => {
                         case "text":
                             return <p dangerouslySetInnerHTML={{ __html: e.src }}></p>
                         case "image":
-                            return <img class="trip-photo" src={e.src} />
+                            return <img className="trip-photo" src={e.src} />
                         case "section":
                             return <h2>{e.src}</h2>
                         case "separator":

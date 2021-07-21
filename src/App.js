@@ -1,6 +1,5 @@
-import { createBrowserHistory } from 'history'
 import ReactGA from 'react-ga'
-import { Router } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import './App.css';
 import Header from "./components/header.component.js"
 import MapPage from "./pages/map.component.js"
@@ -18,38 +17,35 @@ import { Helmet } from 'react-helmet';
 
 function App() {
   const reload = () => window.location.reload();
-  const history = createBrowserHistory()
-  history.listen(location => {
-    ReactGA.set({ page: location.pathname });
-    ReactGA.pageview(location.pathname);
-  });
+  const location = useLocation();
+
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search)
-  }, [history])
+    ReactGA.pageview(location.pathname + location.search);
+    console.log(location.pathname + location.search)
+  }, [location]);
 
   return (
-    <Router history={history}>
-      <div className="App">
-        <Helmet>
-          <title>Daniel A. Zorin</title>
-        </Helmet>
-        <Header />
-        <div className="contents">
-          <Switch>
-            <Route path="/sitemap.txt" onEnter={reload} />
-            <Route exact path='/' component={ContentsPage} />
-            <Route exact path='/trip/:tripId' component={TripPage} />
-            <Route exact path='/year/:year' component={YearPage} />
-            <Route exact path='/country/:countryId' component={CountryPage} />
-            <Route exact path='/map' component={MapPage} />
-            <Route exact path='/list' component={CountryListPage} />
-            <Route exact path='/plans' component={PlansPage} />
-            <Route exact path='/contacts' component={ContactsPage} />
-            <Route exact path='/search/:query' component={SearchPage} />
-          </Switch>
-        </div>
+
+    <div className="App">
+      <Helmet>
+        <title>Daniel A. Zorin</title>
+      </Helmet>
+      <Header />
+      <div className="contents">
+        <Switch>
+          <Route path="/sitemap.txt" onEnter={reload} />
+          <Route exact path='/' component={ContentsPage} />
+          <Route exact path='/trip/:tripId' component={TripPage} />
+          <Route exact path='/year/:year' component={YearPage} />
+          <Route exact path='/country/:countryId' component={CountryPage} />
+          <Route exact path='/map' component={MapPage} />
+          <Route exact path='/list' component={CountryListPage} />
+          <Route exact path='/plans' component={PlansPage} />
+          <Route exact path='/contacts' component={ContactsPage} />
+          <Route exact path='/search/:query' component={SearchPage} />
+        </Switch>
       </div>
-    </Router>
+    </div>
   );
 }
 
