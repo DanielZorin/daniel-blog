@@ -14,6 +14,7 @@ import ContactsPage from './pages/contacts.component.js';
 import { Switch, Route } from 'react-router-dom';
 import SearchPage from './pages/search.component';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 function App() {
   const reload = () => window.location.reload();
@@ -29,6 +30,9 @@ function App() {
   return (
     <Router history={history}>
       <div className="App">
+        <Helmet>
+          <title>Daniel A. Zorin</title>
+        </Helmet>
         <Header />
         <div className="contents">
           <Switch>

@@ -9,7 +9,6 @@ const CountryListPage = () => {
     let data = useSelector(selectCountryList);
 
     React.useEffect(() => store.dispatch(fetchCountryListContents()), []);
-    console.log(data)
 
     return (
         <div>

@@ -5,8 +5,11 @@ import { PersistGate } from 'redux-persist/integration/react';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from 'react-ga'
 import { Provider } from 'react-redux'
 import { store, persistor } from './redux/store.js'
+
+ReactGA.initialize('G-W5VKV9FG1S');
 
 ReactDOM.render(
   <React.StrictMode>
