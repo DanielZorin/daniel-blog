@@ -18,22 +18,21 @@ const ContentsPage = () => {
         years = years.sort().reverse();
     }
 
-    return <>{
-        years.map(year => <>
-            <h2 key={year}><Link className="yearLink" to={"year/" + year.toString()}>{year}</Link></h2>
+    return years.map(year => <>
+            <h2 key={year}>
+                <Link key={year} className="yearLink" to={"year/" + year.toString()}>{year}</Link>
+            </h2>
             {
                 data.filter(entry => entry.year === year).map((entry, i) =>
                     <p key={i}>
                         {
                             entry.link ?
-                                <Link className="tripLink" to={entry.link}>{entry.name}</Link>
-                                : <span className="tripLinkFuture">{entry.name}</span>
+                                <Link key={i} className="tripLink" to={entry.link}>{entry.name}</Link>
+                                : <span key={i} className="tripLinkFuture">{entry.name}</span>
                         }
                     </p>)
             }
         </>)
-
-    }</>
 }
 
 export default ContentsPage;

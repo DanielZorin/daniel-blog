@@ -14,8 +14,8 @@ const CountryListPage = () => {
         <div>
             <ol>
                 {
-                    data.map(entry =>
-                        <li>
+                    data.map((entry, i) =>
+                        <li key={i}>
                             <b><Link to={"../country/" + entry.eng_name} className="tripLink">{entry.rus_name}</Link></b>
                             {
                             entry.cities === "" ? null : 

@@ -20,12 +20,12 @@ const YearPage = () => {
                     {
                         entry.link ?
                             <Link to={"../" + entry.link}>
-                                <img src={entry.preview} class="tripImage" />
+                                <img alt={entry.name} src={entry.preview} class="tripImage" />
                                 <div class="tripName">{entry.name}</div>
                             </Link>
                             :
                             <>
-                                <img src={entry.preview} class="tripImage" />
+                                <img alt={entry.name} src={entry.preview} class="tripImage" />
                                 <div class="tripNameFuture">{entry.name}</div>
                             </>
 
