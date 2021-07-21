@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { store } from '../redux/store'
 import { fetchPost } from '../redux/actions'
 import { useSelector } from 'react-redux'
+import { Helmet } from 'react-helmet'
 import { selectCurrentPost } from '../redux/selectors.js'
 import './contents.style.scss'
 
@@ -16,6 +17,11 @@ const TripPage = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>{data.title} - Daniel A. Zorin</title>
+                <meta name="description" content="Blog post" />
+            </Helmet>
+
             <h1>{data.title}</h1>
             <i>{data.dates}</i>
             {
