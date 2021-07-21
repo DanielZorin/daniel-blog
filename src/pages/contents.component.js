@@ -20,15 +20,16 @@ const ContentsPage = () => {
 
     return <>{
         years.map(year => <>
-            <h2><Link className="yearLink" to={"year/" + year.toString()}>{year}</Link></h2>
+            <h2 key={year}><Link className="yearLink" to={"year/" + year.toString()}>{year}</Link></h2>
             {
-                data.filter(entry => entry.year == year).map(entry => <p>
-                    {
-                        entry.link ?
-                            <Link className="tripLink" to={entry.link}>{entry.name}</Link>
-                            : <span className="tripLinkFuture">{entry.name}</span>
-                    }
-                </p>)
+                data.filter(entry => entry.year === year).map((entry, i) =>
+                    <p key={i}>
+                        {
+                            entry.link ?
+                                <Link className="tripLink" to={entry.link}>{entry.name}</Link>
+                                : <span className="tripLinkFuture">{entry.name}</span>
+                        }
+                    </p>)
             }
         </>)
 

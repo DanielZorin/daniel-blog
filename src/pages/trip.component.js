@@ -25,18 +25,19 @@ const TripPage = () => {
             <h1>{data.title}</h1>
             <i>{data.dates}</i>
             {
-                data.content.map((e) => {
+                data.content.map((e, i) => {
                     switch (e.type) {
                         case "text":
-                            return <p dangerouslySetInnerHTML={{ __html: e.src }}></p>
+                            return <p key={i} dangerouslySetInnerHTML={{ __html: e.src }}></p>
                         case "image":
-                            return <img className="trip-photo" src={e.src} />
+                            return <img key={i} alt="" className="trip-photo" src={e.src} />
                         case "section":
-                            return <h2>{e.src}</h2>
+                            return <h2 key={i}>{e.src}</h2>
                         case "separator":
-                            return <center> * * * </center>
+                            return <center key={i}> * * * </center>
+                        default:
+                            return "";
                     }
-                    return "";
                 }
                 )
             }

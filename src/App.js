@@ -1,4 +1,3 @@
-import ReactGA from 'react-ga'
 import { useLocation } from 'react-router-dom'
 import './App.css';
 import Header from "./components/header.component.js"
@@ -14,15 +13,19 @@ import { Switch, Route } from 'react-router-dom';
 import SearchPage from './pages/search.component';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import { useGA4React } from 'ga-4-react';
 
 function App() {
   const reload = () => window.location.reload();
   const location = useLocation();
+  const ga = useGA4React();
 
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-    console.log(location.pathname + location.search)
-  }, [location]);
+    if (ga) {
+      ga.pageview(location.pathname + location.search);
+      console.log(location.pathname + location.search)
+    }
+  }, [location, ga]);
 
   return (
 
