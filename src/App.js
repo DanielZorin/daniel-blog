@@ -30,9 +30,6 @@ function App() {
   return (
 
     <div className="App">
-      <Helmet>
-        <title>Daniel A. Zorin</title>
-      </Helmet>
       <Header />
       <div className="contents">
         <Switch>
@@ -48,6 +45,9 @@ function App() {
           <Route exact path='/search/:query' component={SearchPage} />
         </Switch>
       </div>
+      <Helmet>
+        <title>Daniel A. Zorin</title>
+      </Helmet>
     </div>
   );
 }
