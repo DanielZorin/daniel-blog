@@ -1,8 +1,4 @@
-Sao Paulo-Centro
-Sao Paulo-Paulista
-Sao Paulo-Aero
-Sao Paulo-Morumbi
-Santos
+==========================
 Rio de Janeiro-Copacabana
 Rio de Janeiro-Centro
 Rio de Janeiro-Tijuca
@@ -10,6 +6,16 @@ Rio de Janeiro-Rocinha
 Rio de Janeiro-Paqueta
 Rio de Janeiro-aero
 Food-Brazil
+Salvador
+Salvador-2
+Aracaju
+Sao Cristovao
+Maceio
+Joao Pessoa
+Natal
+Recife
+Recife-2
+Olinda
 Manaus
 Manaus-2
 Amazonas
@@ -29,30 +35,3 @@ Ubatuba
 Paraty
 Vitoria
 Minsk
-==========================
-Santa Cruz
-Sucre
-Potosi
-Uyuni Road
-Uyuni
-Salar de Uyuni
-Oruro
-Copacabana
-Yumani
-Coroico
-La Paz
-La Paz-2
-La Paz-3
-La Paz-4
-La Paz-5
-
-Salvador
-Salvador-2
-Aracaju
-Sao Cristovao
-Maceio
-Joao Pessoa
-Natal
-Recife
-Recife-2
-Olinda
