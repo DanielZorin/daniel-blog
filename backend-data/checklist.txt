@@ -1,30 +1,29 @@
+Voskresensk
+Bronnitsy
+Ramenskoye
+Zhukovsky
+Kalyazin
+Starobislovo
+SPB
+Pavlovsk
+Burgas
+Nesebr
+Kazanlak
+Shipka
+Gabrovo
+Veliko Tarnovo
+Varna
+Constanta
+Bucharest
+Sibiu
+Medias
+Alba Iulia
+Deva
+Hunedoara
+Arad
+Timisoara
+Drobeta Turnu Severin
 ==========================
-Rio de Janeiro-Copacabana
-Rio de Janeiro-Centro
-Rio de Janeiro-Tijuca
-Rio de Janeiro-Rocinha
-Rio de Janeiro-Paqueta
-Rio de Janeiro-aero
-Food-Brazil
-Salvador
-Salvador-2
-Aracaju
-Sao Cristovao
-Maceio
-Joao Pessoa
-Natal
-Recife
-Recife-2
-Olinda
-Manaus
-Manaus-2
-Amazonas
-Santarem
-Belem
-Brasilia
-Brasilia-2
-Alto Paraiso
-Chapada dos Veadeiros
 Cuiaba
 Chapada dos Guimaraes
 Campo Grande
