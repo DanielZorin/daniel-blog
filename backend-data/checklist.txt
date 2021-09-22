@@ -6,13 +6,6 @@ Kalyazin
 Starobislovo
 SPB
 Pavlovsk
-Burgas
-Nesebr
-Kazanlak
-Shipka
-Gabrovo
-Veliko Tarnovo
-Varna
 Constanta
 Bucharest
 Sibiu
@@ -34,3 +27,10 @@ Ubatuba
 Paraty
 Vitoria
 Minsk
+Burgas
+Nesebr
+Kazanlak
+Shipka
+Gabrovo
+Veliko Tarnovo
+Varna
