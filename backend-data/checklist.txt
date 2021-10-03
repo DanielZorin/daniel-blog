@@ -8,29 +8,19 @@ SPB
 Pavlovsk
 Constanta
 Bucharest
+Sibiu road
 Sibiu
+Medias road
 Medias
+==========================
+Kazanlak
+Shipka
+Gabrovo
+Veliko Tarnovo
+Varna
 Alba Iulia
 Deva
 Hunedoara
 Arad
 Timisoara
 Drobeta Turnu Severin
-==========================
-Cuiaba
-Chapada dos Guimaraes
-Campo Grande
-Bonito-1
-Bonito-2
-Dourados
-Ubatuba
-Paraty
-Vitoria
-Minsk
-Burgas
-Nesebr
-Kazanlak
-Shipka
-Gabrovo
-Veliko Tarnovo
-Varna
