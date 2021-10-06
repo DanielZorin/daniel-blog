@@ -1,3 +1,22 @@
+
+==========================
+Kazanlak
+Shipka
+Gabrovo
+Veliko Tarnovo
+Varna
+Constanta
+Bucharest
+Sibiu road
+Sibiu
+Medias road
+Medias
+Alba Iulia
+Deva
+Hunedoara
+Arad
+Timisoara
+Drobeta Turnu Severin
 Voskresensk
 Bronnitsy
 Ramenskoye
@@ -6,21 +25,3 @@ Kalyazin
 Starobislovo
 SPB
 Pavlovsk
-Constanta
-Bucharest
-Sibiu road
-Sibiu
-Medias road
-Medias
-==========================
-Kazanlak
-Shipka
-Gabrovo
-Veliko Tarnovo
-Varna
-Alba Iulia
-Deva
-Hunedoara
-Arad
-Timisoara
-Drobeta Turnu Severin
