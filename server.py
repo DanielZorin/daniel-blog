@@ -51,6 +51,14 @@ def get_country_list():
         data = ""
     return jsonify({'trip': data})
     
+@app.route('/get_cities', methods=["GET"])
+def get_cities():
+    try:
+        data = db["cities"]
+    except:
+        data = ""
+    return jsonify({'trip': data})
+    
 @app.route('/search/<query>', methods=["GET"])
 def get_search(query):
     try:

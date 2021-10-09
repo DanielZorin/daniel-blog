@@ -10,6 +10,7 @@ http://www.danielzorin.ml/trip/aland
 http://www.danielzorin.ml/trip/albania
 http://www.danielzorin.ml/trip/alexandrov
 http://www.danielzorin.ml/trip/altai
+http://www.danielzorin.ml/trip/amazonia
 http://www.danielzorin.ml/trip/anapa1999
 http://www.danielzorin.ml/trip/anapa2000
 http://www.danielzorin.ml/trip/anapa2001
@@ -52,6 +53,7 @@ http://www.danielzorin.ml/trip/blagoveshchensk
 http://www.danielzorin.ml/trip/borneo
 http://www.danielzorin.ml/trip/bosnia
 http://www.danielzorin.ml/trip/boston
+http://www.danielzorin.ml/trip/brasilia
 http://www.danielzorin.ml/trip/bratislava
 http://www.danielzorin.ml/trip/brest
 http://www.danielzorin.ml/trip/brisbane
@@ -155,6 +157,7 @@ http://www.danielzorin.ml/trip/jerusalem
 http://www.danielzorin.ml/trip/jordan
 http://www.danielzorin.ml/trip/kaliningrad
 http://www.danielzorin.ml/trip/kaluga
+http://www.danielzorin.ml/trip/kalyazin
 http://www.danielzorin.ml/trip/kansai
 http://www.danielzorin.ml/trip/karelia
 http://www.danielzorin.ml/trip/karlsruhe
@@ -219,6 +222,7 @@ http://www.danielzorin.ml/trip/melbourne
 http://www.danielzorin.ml/trip/mexico
 http://www.danielzorin.ml/trip/miami
 http://www.danielzorin.ml/trip/milan
+http://www.danielzorin.ml/trip/minsk06-2021
 http://www.danielzorin.ml/trip/moldova
 http://www.danielzorin.ml/trip/monaco
 http://www.danielzorin.ml/trip/mongolia
@@ -264,7 +268,9 @@ http://www.danielzorin.ml/trip/palestine
 http://www.danielzorin.ml/trip/palestine2010
 http://www.danielzorin.ml/trip/palmademallorca
 http://www.danielzorin.ml/trip/palmas
+http://www.danielzorin.ml/trip/pantanal
 http://www.danielzorin.ml/trip/paraguay
+http://www.danielzorin.ml/trip/paraty
 http://www.danielzorin.ml/trip/paris
 http://www.danielzorin.ml/trip/paris2003
 http://www.danielzorin.ml/trip/paris2019
@@ -289,11 +295,13 @@ http://www.danielzorin.ml/trip/puschino2000
 http://www.danielzorin.ml/trip/pyatigorsk
 http://www.danielzorin.ml/trip/quebec
 http://www.danielzorin.ml/trip/rajasthan
+http://www.danielzorin.ml/trip/ramenskoye
 http://www.danielzorin.ml/trip/recife
 http://www.danielzorin.ml/trip/riga2017
 http://www.danielzorin.ml/trip/rio-de-janeiro
 http://www.danielzorin.ml/trip/rio-de-janeiro2021
 http://www.danielzorin.ml/trip/romania
+http://www.danielzorin.ml/trip/romania2021
 http://www.danielzorin.ml/trip/rome
 http://www.danielzorin.ml/trip/rostov-on-don
 http://www.danielzorin.ml/trip/ryazan
@@ -337,6 +345,7 @@ http://www.danielzorin.ml/trip/south-ossetia
 http://www.danielzorin.ml/trip/spain1996
 http://www.danielzorin.ml/trip/spb02-2018
 http://www.danielzorin.ml/trip/spb02-2021
+http://www.danielzorin.ml/trip/spb08-2021
 http://www.danielzorin.ml/trip/spb11-2017
 http://www.danielzorin.ml/trip/spb2001
 http://www.danielzorin.ml/trip/spb2002
@@ -406,6 +415,7 @@ http://www.danielzorin.ml/trip/uzbekistan
 http://www.danielzorin.ml/trip/valencia
 http://www.danielzorin.ml/trip/vancouver
 http://www.danielzorin.ml/trip/vanuatu
+http://www.danielzorin.ml/trip/varna
 http://www.danielzorin.ml/trip/vatican
 http://www.danielzorin.ml/trip/vatican2017
 http://www.danielzorin.ml/trip/velikie-luki

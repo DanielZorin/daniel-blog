@@ -33,9 +33,9 @@ const TripPage = () => {
                         case "image":
                             return <img key={i} alt="" className="trip-photo" src={e.src} />
                         case "section":
-                            return <h2 key={i}>{e.src}</h2>
+                            return <><a name={e.bookmark} id={e.bookmark}></a><h2 key={i}>{e.src}</h2></>
                         case "separator":
-                            return <center key={i}> * * * </center>
+                            return <><a name={e.bookmark} id={e.bookmark}></a><center key={i}> * * * </center></>
                         default:
                             return "";
                     }

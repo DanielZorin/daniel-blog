@@ -18,6 +18,11 @@ const fetchCountryListSuccess = countryList => ({
     payload: { countryList }
 })
 
+const fetchCitiesSuccess = citiesList => ({
+    type: 'FETCH_CITIES_SUCCESS',
+    payload: { citiesList: citiesList }
+})
+
 const fetchSearchResultsSuccess = data => ({
     type: 'FETCH_SEARCH_RESULTS_SUCCESS',
     payload: { searchResults: data }
@@ -55,6 +60,18 @@ export const fetchCountryListContents =  () => {
         try {
             let posts = await axios.get(URL_PREFIX + "/get_country_list").then(res => res.data.trip)
             dispatch(fetchCountryListSuccess(posts))
+        }
+        catch(e){
+            console.log("ERROR IN DISPATCH " + e)
+        }
+    }
+}
+
+export const fetchCities =  () => {
+    return async dispatch => {
+        try {
+            let posts = await axios.get(URL_PREFIX + "/get_cities").then(res => res.data.trip)
+            dispatch(fetchCitiesSuccess(posts))
         }
         catch(e){
             console.log("ERROR IN DISPATCH " + e)

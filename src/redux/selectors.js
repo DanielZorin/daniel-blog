@@ -13,3 +13,5 @@ export const selectCurrentPostId = state => state.tripId
 export const selectCountryList = state => state.countryList
 
 export const selectSearchResults = state => state.searchResults
+
+export const selectCities = (state, country) => state.citiesList[country]

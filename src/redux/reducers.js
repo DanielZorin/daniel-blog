@@ -1,4 +1,4 @@
-const INITIAL_STATE = { posts: [], tripData: undefined, tripId: undefined, countryList: [], searchResults: [] };
+const INITIAL_STATE = { posts: [], tripData: undefined, tripId: undefined, countryList: [], citiesList: {}, searchResults: [] };
 
 const postsReducer = (state = INITIAL_STATE, action) => {
 
@@ -9,6 +9,8 @@ const postsReducer = (state = INITIAL_STATE, action) => {
             return { ...state, tripData: action.payload.tripData, tripId: action.payload.tripId }
         case 'FETCH_COUNTRY_LIST_SUCCESS':
             return { ...state, countryList: action.payload.countryList }
+        case 'FETCH_CITIES_SUCCESS':
+            return { ...state, citiesList: action.payload.citiesList }
         case 'FETCH_SEARCH_RESULTS_SUCCESS':
             return { ...state, searchResults: action.payload.searchResults }
         default:
