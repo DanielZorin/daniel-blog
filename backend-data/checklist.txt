@@ -1,14 +1,48 @@
-
+Washington DC
+Baltimore
+Belize City
+Caye Caulker
+Belmopan
+San Ignacio
+Flores
+Tikal
+Livingston
+Guatemala
+Antigua
+Atitlan
+Chichicastenango
+Ahuachapan
+San Salvador
+La Libertad
+San Miguel
+Tegucigalpa
+Comayagua
+San Pedro Sula
+Leon
+Matagalpa
+Managua
+Masaya
+Granada
+Rivas
+Liberia
+La Fortuna
+San Jose
+Cartago
+Heredia
+Alajuela
+Limon
+Puntarenas
+Quepos
+David
+Panama
+Panama-2
+Colon
+Portobelo
+Nassau
+Miami
+Key West-1
+Key West-2
 ==========================
-Kazanlak
-Shipka
-Gabrovo
-Veliko Tarnovo
-Varna
-Constanta
-Bucharest
-Sibiu road
-Sibiu
 Medias road
 Medias
 Alba Iulia
