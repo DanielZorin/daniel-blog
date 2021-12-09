@@ -1,13 +1,5 @@
 Washington DC
 Baltimore
-Belize City
-Caye Caulker
-Belmopan
-San Ignacio
-Flores
-Tikal
-Livingston
-Guatemala
 Antigua
 Atitlan
 Chichicastenango
@@ -43,19 +35,11 @@ Miami
 Key West-1
 Key West-2
 ==========================
-Medias road
-Medias
-Alba Iulia
-Deva
-Hunedoara
-Arad
-Timisoara
-Drobeta Turnu Severin
-Voskresensk
-Bronnitsy
-Ramenskoye
-Zhukovsky
-Kalyazin
-Starobislovo
-SPB
-Pavlovsk
+Belize City
+Caye Caulker
+Belmopan
+San Ignacio
+Flores
+Tikal
+Livingston
+Guatemala
