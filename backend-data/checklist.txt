@@ -1,12 +1,9 @@
 Washington DC
 Baltimore
-Antigua
-Atitlan
-Chichicastenango
-Ahuachapan
 San Salvador
 La Libertad
 San Miguel
+Choluteca
 Tegucigalpa
 Comayagua
 San Pedro Sula
@@ -34,6 +31,18 @@ Nassau
 Miami
 Key West-1
 Key West-2
+Istanbul
+Istanbul-2
+Kayseri
+Nevsehir
+Goreme
+Uchisar
+Avanos
+Cavusin
+Ankara
+Ankara-2
+Konya
+Safranbolu
 ==========================
 Belize City
 Caye Caulker
@@ -43,3 +52,8 @@ Flores
 Tikal
 Livingston
 Guatemala
+Antigua
+Atitlan
+Chichicastenango
+Ahuachapan
+Ruta de las Flores
