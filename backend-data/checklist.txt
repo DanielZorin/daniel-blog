@@ -1,17 +1,3 @@
-Liberia
-La Fortuna
-San Jose
-Cartago
-Heredia
-Alajuela
-Limon
-Puntarenas
-Quepos
-David
-Panama
-Panama-2
-Colon
-Portobelo
 Nassau
 Washington DC
 Baltimore
@@ -44,11 +30,6 @@ Trabzon
 Erzurum
 Van
 ==========================
-Ahuachapan
-Ruta de las Flores
-San Salvador
-La Libertad
-San Miguel
 Choluteca
 Tegucigalpa
 Comayagua
@@ -59,3 +40,18 @@ Managua
 Masaya
 Granada
 Rivas
+Liberia
+La Fortuna
+San Jose
+Cartago
+Heredia
+Alajuela
+Limon
+Puntarenas
+Quepos
+David
+Panama
+Panama-2
+Panama-3
+Colon
+Portobelo
