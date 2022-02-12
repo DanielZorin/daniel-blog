@@ -1,9 +1,3 @@
-Nassau
-Washington DC
-Baltimore
-Miami
-Key West-1
-Key West-2
 Istanbul
 Istanbul-2
 Istanbul-3
@@ -30,16 +24,6 @@ Trabzon
 Erzurum
 Van
 ==========================
-Choluteca
-Tegucigalpa
-Comayagua
-San Pedro Sula
-Leon
-Matagalpa
-Managua
-Masaya
-Granada
-Rivas
 Liberia
 La Fortuna
 San Jose
@@ -55,3 +39,9 @@ Panama-2
 Panama-3
 Colon
 Portobelo
+Nassau
+Washington DC
+Baltimore
+Miami
+Key West-1
+Key West-2
