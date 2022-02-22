@@ -1,17 +1,3 @@
-Istanbul
-Istanbul-2
-Istanbul-3
-Istanbul-4
-Kayseri
-Nevsehir
-Goreme
-Uchisar
-Avanos
-Cavusin
-Ankara
-Ankara-2
-Konya
-Safranbolu
 Antalya
 Denizli
 Pamukkale
@@ -45,3 +31,17 @@ Baltimore
 Miami
 Key West-1
 Key West-2
+Istanbul
+Istanbul-2
+Istanbul-3
+Istanbul-4
+Kayseri
+Nevsehir
+Goreme
+Uchisar
+Avanos
+Cavusin
+Ankara
+Ankara-2
+Konya
+Safranbolu
