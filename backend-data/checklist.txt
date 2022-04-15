@@ -1,36 +1,16 @@
-Antalya
-Denizli
-Pamukkale
-Selcuk
-Efes
-Izmir
-Canakkale
-Troy
-Trabzon
-Erzurum
-Van
+Moscow
+Nur-Sultan
+Shymkent
+Kemer
+Camyuva
+Tekirova
+Finike
+Kas
+Kalkan
+Kinik
+Fethiye
+Oludeniz
 ==========================
-Liberia
-La Fortuna
-San Jose
-Cartago
-Heredia
-Alajuela
-Limon
-Puntarenas
-Quepos
-David
-Panama
-Panama-2
-Panama-3
-Colon
-Portobelo
-Nassau
-Washington DC
-Baltimore
-Miami
-Key West-1
-Key West-2
 Istanbul
 Istanbul-2
 Istanbul-3
@@ -45,3 +25,14 @@ Ankara
 Ankara-2
 Konya
 Safranbolu
+Antalya
+Denizli
+Pamukkale
+Selcuk
+Efes
+Izmir
+Canakkale
+Troy
+Trabzon
+Erzurum
+Van
