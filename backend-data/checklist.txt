@@ -1,15 +1,11 @@
-Moscow
-Nur-Sultan
-Shymkent
 Kemer
 Camyuva
 Tekirova
-Finike
-Kas
-Kalkan
-Kinik
-Fethiye
-Oludeniz
+Kiris
+Teleferik
+Antalya-1
+Antalya-2
+Istanbul 04
 ==========================
 Istanbul
 Istanbul-2
@@ -36,3 +32,13 @@ Troy
 Trabzon
 Erzurum
 Van
+Moscow
+Nur-Sultan
+Shymkent
+Istanbul 03
+Finike
+Kas
+Kalkan
+Kinik
+Fethiye
+Oludeniz
