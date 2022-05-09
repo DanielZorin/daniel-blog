@@ -1,22 +1,14 @@
-Kemer
-Camyuva
-Tekirova
-Kiris
-Teleferik
-Antalya-1
-Antalya-2
-Istanbul 04
+Grenada
+Grenada-2
+St Lucia
+St Lucia-2
+Dominica
+Martinique
+Guadeloupe-1
+Guadeloupe-2
+Barbados
+Antigua
 ==========================
-Istanbul
-Istanbul-2
-Istanbul-3
-Istanbul-4
-Kayseri
-Nevsehir
-Goreme
-Uchisar
-Avanos
-Cavusin
 Ankara
 Ankara-2
 Konya
@@ -36,9 +28,17 @@ Moscow
 Nur-Sultan
 Shymkent
 Istanbul 03
+Kemer
+Camyuva
+Tekirova
+Kiris
+Teleferik
 Finike
 Kas
 Kalkan
 Kinik
 Fethiye
 Oludeniz
+Antalya-1
+Antalya-2
+Istanbul 04
