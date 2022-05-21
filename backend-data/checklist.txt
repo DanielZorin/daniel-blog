@@ -8,6 +8,16 @@ Guadeloupe-1
 Guadeloupe-2
 Barbados
 Antigua
+Antigua-2
+St Kitts
+Nevis
+St Maarten
+Kingston
+Kingston-2
+Montego Bay
+Negril
+Newark
+New York
 ==========================
 Ankara
 Ankara-2
