@@ -1,17 +1,3 @@
-Grenada
-Grenada-2
-St Lucia
-St Lucia-2
-Dominica
-Martinique
-Guadeloupe-1
-Guadeloupe-2
-Barbados
-Antigua
-Antigua-2
-St Kitts
-Nevis
-St Maarten
 Kingston
 Kingston-2
 Spanish Town
@@ -19,23 +5,12 @@ Montego Bay
 Negril
 Newark
 New York
-==========================
-Ankara
-Ankara-2
-Konya
-Safranbolu
-Antalya
-Denizli
-Pamukkale
-Selcuk
-Efes
-Izmir
-Canakkale
-Troy
-Trabzon
-Erzurum
-Van
 Moscow
+Beslan
+Vladikavkaz
+Tbilisi
+Goynuk
+==========================
 Nur-Sultan
 Shymkent
 Istanbul 03
@@ -53,3 +28,18 @@ Oludeniz
 Antalya-1
 Antalya-2
 Istanbul 04
+Grenada
+Grenada-2
+St Lucia
+St Lucia-2
+Dominica
+Martinique
+Guadeloupe-1
+Guadeloupe-2
+Barbados
+Antigua
+Antigua-2
+St Kitts
+St Kitts-2
+Nevis
+St Maarten
