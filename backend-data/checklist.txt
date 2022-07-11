@@ -1,24 +1,32 @@
-Kingston
-Kingston-2
-Spanish Town
-Montego Bay
-Negril
 Newark
 New York
 Moscow
 Beslan
 Vladikavkaz
 Tbilisi
-Goynuk
-==========================
-Nur-Sultan
-Shymkent
-Istanbul 03
+Tbilisi-2
+Tbilisi-3
+Tbilisi-4
+Tbilisi-5
 Kemer
-Camyuva
-Tekirova
-Kiris
-Teleferik
+Goynuk
+Kuzdere
+Cirali
+Beldibi
+Demre
+Korkuteli
+Acipayam
+Afrodisias
+Pamukkale
+Cardak
+Salda
+Tefenni
+==========================
+Kingston
+Kingston-2
+Spanish Town
+Montego Bay
+Negril
 Finike
 Kas
 Kalkan
@@ -28,18 +36,3 @@ Oludeniz
 Antalya-1
 Antalya-2
 Istanbul 04
-Grenada
-Grenada-2
-St Lucia
-St Lucia-2
-Dominica
-Martinique
-Guadeloupe-1
-Guadeloupe-2
-Barbados
-Antigua
-Antigua-2
-St Kitts
-St Kitts-2
-Nevis
-St Maarten
