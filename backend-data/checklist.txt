@@ -1,18 +1,6 @@
-Newark
-New York
 Moscow
 Beslan
 Vladikavkaz
-Tbilisi
-Tbilisi-2
-Tbilisi-3
-Tbilisi-4
-Tbilisi-5
-Kemer
-Goynuk
-Kuzdere
-Cirali
-Beldibi
 Demre
 Korkuteli
 Acipayam
@@ -21,12 +9,20 @@ Pamukkale
 Cardak
 Salda
 Tefenni
+Kemer
+Goynuk
+Kuzdere
+Cirali
+Beldibi
+Gedelme
 ==========================
 Kingston
 Kingston-2
 Spanish Town
 Montego Bay
 Negril
+Newark
+New York
 Finike
 Kas
 Kalkan
@@ -36,3 +32,8 @@ Oludeniz
 Antalya-1
 Antalya-2
 Istanbul 04
+Tbilisi
+Tbilisi-2
+Tbilisi-3
+Tbilisi-4
+Tbilisi-5
