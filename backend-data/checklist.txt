@@ -1,28 +1,17 @@
-Moscow
-Beslan
-Vladikavkaz
-Demre
-Korkuteli
-Acipayam
-Afrodisias
-Pamukkale
-Cardak
-Salda
-Tefenni
 Kemer
 Goynuk
 Kuzdere
 Cirali
 Beldibi
 Gedelme
+Diyarbakir
+Sanliurfa
+Nemrut Dag
+Kahta
+Adiyaman
+Harran
+Gaziantep
 ==========================
-Kingston
-Kingston-2
-Spanish Town
-Montego Bay
-Negril
-Newark
-New York
 Finike
 Kas
 Kalkan
@@ -32,8 +21,14 @@ Oludeniz
 Antalya-1
 Antalya-2
 Istanbul 04
-Tbilisi
-Tbilisi-2
-Tbilisi-3
-Tbilisi-4
-Tbilisi-5
+Demre
+Korkuteli
+Acipayam
+Afrodisias
+Pamukkale
+Cardak
+Salda
+Tefenni
+Moscow
+Beslan
+Vladikavkaz
