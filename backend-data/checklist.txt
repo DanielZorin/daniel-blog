@@ -24,15 +24,6 @@ Chios
 Bergama
 Marmaris
 ==========================
-Finike
-Kas
-Kalkan
-Kinik
-Fethiye
-Oludeniz
-Antalya-1
-Antalya-2
-Istanbul 04
 Demre
 Korkuteli
 Acipayam
@@ -56,6 +47,3 @@ Cirali
 Beldibi
 Gedelme
 Kumluca
-Moscow
-Beslan
-Vladikavkaz

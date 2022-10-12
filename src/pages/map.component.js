@@ -7,9 +7,6 @@ const MapPage = () => {
         <div align="center">
         <img src={mapworld} alt="Карта мира" width="80%"/>
         </div>
-        <div align="center">
-        <img src={maprussia} alt="Карта России" width="80%"/>
-        </div>
         </>
 } 
 
