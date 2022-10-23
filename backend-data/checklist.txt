@@ -1,9 +1,4 @@
-Tehran
-Tehran-2
-Mashhad
-Bandar Abbas
-Hormuz
-Qeshm
+==========================
 Shiraz
 Persepolis
 Yazd
@@ -14,16 +9,6 @@ Masuleh
 Fuman
 Ardabil
 Tabriz
-Dogubayazit
-Igdir
-Kars
-Ani
-Izmir
-Cesme
-Chios
-Bergama
-Marmaris
-==========================
 Demre
 Korkuteli
 Acipayam
@@ -47,3 +32,12 @@ Cirali
 Beldibi
 Gedelme
 Kumluca
+Dogubayazit
+Igdir
+Kars
+Ani
+Izmir
+Cesme
+Chios
+Bergama
+Marmaris
