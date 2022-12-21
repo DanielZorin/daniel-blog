@@ -3,7 +3,6 @@ import React from 'react'
 const PlansPage = () => {
     return <>
         <p>
-            1-13 декабря - Бахрейн, Саудовская Аравия<br/>
             февраль - Ирак (?)<br/>
         </p>
         <p>

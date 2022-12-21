@@ -132,7 +132,7 @@ def generate_sitemap():
     for trip in sorted(os.listdir("backend-data/trip")):
         index = trip.replace(".html", "")
         res.append("trip/" + index)
-    res = ["http://www.danielzorin.ml/" + s for s in res]
+    res = ["http://www.daniel-zorin.ml/" + s for s in res]
     f = open("./public/sitemap.txt", "w")
     f.write("\n".join(res))
     f.close()
@@ -168,7 +168,7 @@ if __name__ == "__main__":
         
     db = {"links": links, "trips": trip_data, "contents": entries, "country_list": country_list, "cities": cities}
     f = open("db.json", "w")
-    f.write(json.dumps(db))
+    f.write(json.dumps(db, indent=4))
     f.close()
     
     generate_sitemap()
