@@ -1,15 +1,4 @@
 ==========================
-Bahrain-1
-Bahrain-2
-Dammam
-Riyadh
-Jazan
-Abha
-Jeddah
-Mecca
-Tabuk
-Al Ula
-Medina
 Beirut
 Jounieh
 Baalbek
@@ -32,3 +21,6 @@ Isparta
 Batumi
 Poti
 Kobuleti
+Alanya
+Manavgat
+Side
