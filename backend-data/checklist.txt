@@ -1,13 +1,21 @@
+Ankara
+Abu Dhabi
+Dubai
+Ras al Khaimah
+Umm al Quwain
+Ajman
+Dibba
+Musandam
+Sohar
+Muscat
+Ibra
+Izki
+Nizwa
+Hamra
+Bahla
+Ibri
+Bat
 ==========================
-Beirut
-Jounieh
-Baalbek
-Byblos
-Batroun
-Tripoli
-Saida
-Sour
-Antalya-october
 Adana
 Tarsus
 Mersin
@@ -18,9 +26,7 @@ Bursa
 Kutahya
 Afyonkarahisar
 Isparta
-Batumi
-Poti
-Kobuleti
 Alanya
 Manavgat
 Side
+Antalya-february
