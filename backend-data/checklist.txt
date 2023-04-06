@@ -1,3 +1,7 @@
+Kemer-winter
+==========================
+Antalya-february
+Antalya-march
 Ankara
 Abu Dhabi
 Dubai
@@ -15,18 +19,3 @@ Hamra
 Bahla
 Ibri
 Bat
-==========================
-Adana
-Tarsus
-Mersin
-Kizkalesi
-Anamur
-Istanbul
-Bursa
-Kutahya
-Afyonkarahisar
-Isparta
-Alanya
-Manavgat
-Side
-Antalya-february
