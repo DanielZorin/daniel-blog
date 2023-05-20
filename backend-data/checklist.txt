@@ -2,23 +2,10 @@ Kuala Lumpur-1
 Kuala Lumpur-2
 Kuala Lumpur-3
 Kuala Lumpur-4
-Bangkok-1
-Bangkok-2
-Bangkok-3
+Kuala Lumpur-5
+Kuala Lumpur-6
 Malacca
-Tanah Rata
-Penang-1
-Penang-2
-Perhentian
-Perhentian-2
-Kota Bharu
 ==========================
-Abu Dhabi
-Dubai
-Ras al Khaimah
-Umm al Quwain
-Ajman
-Dibba
 Musandam
 Sohar
 Muscat
@@ -29,3 +16,12 @@ Hamra
 Bahla
 Ibri
 Bat
+Bangkok-1
+Bangkok-2
+Bangkok-3
+Tanah Rata
+Penang-1
+Penang-2
+Perhentian
+Perhentian-2
+Kota Bharu
