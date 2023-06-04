@@ -1,3 +1,4 @@
+==========================
 Kuala Lumpur-1
 Kuala Lumpur-2
 Kuala Lumpur-3
@@ -5,17 +6,6 @@ Kuala Lumpur-4
 Kuala Lumpur-5
 Kuala Lumpur-6
 Malacca
-==========================
-Musandam
-Sohar
-Muscat
-Ibra
-Izki
-Nizwa
-Hamra
-Bahla
-Ibri
-Bat
 Bangkok-1
 Bangkok-2
 Bangkok-3
