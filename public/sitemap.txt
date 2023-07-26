@@ -30,6 +30,7 @@ http://www.daniel-zorin.ml/trip/antigua
 http://www.daniel-zorin.ml/trip/argentina
 http://www.daniel-zorin.ml/trip/arhangelsk
 http://www.daniel-zorin.ml/trip/armenia
+http://www.daniel-zorin.ml/trip/armenia2023
 http://www.daniel-zorin.ml/trip/arzamas
 http://www.daniel-zorin.ml/trip/atlanta
 http://www.daniel-zorin.ml/trip/augsburg
@@ -66,6 +67,7 @@ http://www.daniel-zorin.ml/trip/bern
 http://www.daniel-zorin.ml/trip/biarritz
 http://www.daniel-zorin.ml/trip/bilbao
 http://www.daniel-zorin.ml/trip/blagoveshchensk
+http://www.daniel-zorin.ml/trip/bolzano
 http://www.daniel-zorin.ml/trip/borneo
 http://www.daniel-zorin.ml/trip/bosnia
 http://www.daniel-zorin.ml/trip/boston
@@ -130,6 +132,7 @@ http://www.daniel-zorin.ml/trip/fethiye
 http://www.daniel-zorin.ml/trip/fiji
 http://www.daniel-zorin.ml/trip/fiji2020
 http://www.daniel-zorin.ml/trip/finland
+http://www.daniel-zorin.ml/trip/florence
 http://www.daniel-zorin.ml/trip/frankfurt
 http://www.daniel-zorin.ml/trip/galicia
 http://www.daniel-zorin.ml/trip/gdansk
@@ -140,6 +143,7 @@ http://www.daniel-zorin.ml/trip/gjirokaster
 http://www.daniel-zorin.ml/trip/goa
 http://www.daniel-zorin.ml/trip/gomel
 http://www.daniel-zorin.ml/trip/goteborg
+http://www.daniel-zorin.ml/trip/graz
 http://www.daniel-zorin.ml/trip/greece
 http://www.daniel-zorin.ml/trip/greece1997
 http://www.daniel-zorin.ml/trip/grenada
@@ -219,6 +223,7 @@ http://www.daniel-zorin.ml/trip/kuala-lumpur
 http://www.daniel-zorin.ml/trip/kuala-lumpur2023
 http://www.daniel-zorin.ml/trip/kumluca
 http://www.daniel-zorin.ml/trip/kursk
+http://www.daniel-zorin.ml/trip/kutaisi
 http://www.daniel-zorin.ml/trip/kyiv
 http://www.daniel-zorin.ml/trip/kyiv2013
 http://www.daniel-zorin.ml/trip/kyrgyzstan
@@ -303,6 +308,7 @@ http://www.daniel-zorin.ml/trip/norway
 http://www.daniel-zorin.ml/trip/novgorod
 http://www.daniel-zorin.ml/trip/novozybkov
 http://www.daniel-zorin.ml/trip/nur-sultan
+http://www.daniel-zorin.ml/trip/nuremberg
 http://www.daniel-zorin.ml/trip/nz-north
 http://www.daniel-zorin.ml/trip/nz-south
 http://www.daniel-zorin.ml/trip/oaxaca
@@ -372,6 +378,7 @@ http://www.daniel-zorin.ml/trip/samoa
 http://www.daniel-zorin.ml/trip/samui
 http://www.daniel-zorin.ml/trip/san-francisco
 http://www.daniel-zorin.ml/trip/san-marino
+http://www.daniel-zorin.ml/trip/san-marino2023
 http://www.daniel-zorin.ml/trip/sanliurfa
 http://www.daniel-zorin.ml/trip/santa-cruz
 http://www.daniel-zorin.ml/trip/sao-paulo
@@ -441,6 +448,7 @@ http://www.daniel-zorin.ml/trip/tambov
 http://www.daniel-zorin.ml/trip/tarragona
 http://www.daniel-zorin.ml/trip/tbilisi
 http://www.daniel-zorin.ml/trip/tbilisi06-2022
+http://www.daniel-zorin.ml/trip/tbilisi06-2023
 http://www.daniel-zorin.ml/trip/tehran
 http://www.daniel-zorin.ml/trip/tel-aviv
 http://www.daniel-zorin.ml/trip/tenerife

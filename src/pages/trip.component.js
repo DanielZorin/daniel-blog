@@ -22,7 +22,7 @@ const TripPage = () => {
                 <title>{data.title} - Daniel A. Zorin</title>
                 <meta name="description" content="Blog post" />
             </Helmet>
-
+            
             <h1>{data.title}</h1>
             <i>{data.dates}</i>
             {

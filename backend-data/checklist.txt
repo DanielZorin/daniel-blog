@@ -1,17 +1,48 @@
+Tbilisi-1
+Tbilisi-2
+Tbilisi-3
+Tbilisi-4
+Telavi
+Gurjaani
+Sighnaghi
+Rustavi
+Chiatura
+Kutaisi
+Tskaltubo
+Vienna
+St Polten
+Linz
+Graz
+Klagenfurt
+Lienz
+Fortezza
+Bolzano
+Trento
+Bologna
+Rimini
+San Marino
+Ancona
+Assisi
+Perugia
+Pisa
+Florence
+Venice
+Nuremberg
+Bamberg
+Weimar
+Erfurt
+prices-Georgia
+prices-Armenia
+prices-Austria
+prices-Italy
+prices-Germany
+Konya
+Cumra
+Karaman
 ==========================
-Kuala Lumpur-1
-Kuala Lumpur-2
-Kuala Lumpur-3
-Kuala Lumpur-4
-Kuala Lumpur-5
-Kuala Lumpur-6
-Malacca
-Bangkok-1
-Bangkok-2
-Bangkok-3
-Tanah Rata
-Penang-1
-Penang-2
-Perhentian
-Perhentian-2
-Kota Bharu
+Yerevan
+Noravank
+Tatev
+Garni
+Spitak
+Alaverdi
