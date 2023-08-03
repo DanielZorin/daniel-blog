@@ -1,14 +1,7 @@
-Tbilisi-1
-Tbilisi-2
-Tbilisi-3
-Tbilisi-4
-Telavi
-Gurjaani
-Sighnaghi
-Rustavi
-Chiatura
-Kutaisi
-Tskaltubo
+prices-Austria
+prices-Italy
+prices-Germany
+==========================
 Vienna
 St Polten
 Linz
@@ -31,18 +24,6 @@ Nuremberg
 Bamberg
 Weimar
 Erfurt
-prices-Georgia
-prices-Armenia
-prices-Austria
-prices-Italy
-prices-Germany
 Konya
 Cumra
 Karaman
-==========================
-Yerevan
-Noravank
-Tatev
-Garni
-Spitak
-Alaverdi
