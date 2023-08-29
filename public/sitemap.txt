@@ -175,6 +175,7 @@ http://www.daniel-zorin.ml/trip/indonesia-1
 http://www.daniel-zorin.ml/trip/indonesia-2
 http://www.daniel-zorin.ml/trip/ireland
 http://www.daniel-zorin.ml/trip/irkutsk2019
+http://www.daniel-zorin.ml/trip/islamabad
 http://www.daniel-zorin.ml/trip/isle-of-man
 http://www.daniel-zorin.ml/trip/israel2010
 http://www.daniel-zorin.ml/trip/istanbul
@@ -230,6 +231,7 @@ http://www.daniel-zorin.ml/trip/kyiv2013
 http://www.daniel-zorin.ml/trip/kyrgyzstan
 http://www.daniel-zorin.ml/trip/kyushu
 http://www.daniel-zorin.ml/trip/la-paz
+http://www.daniel-zorin.ml/trip/lahore
 http://www.daniel-zorin.ml/trip/lanzarote
 http://www.daniel-zorin.ml/trip/laos
 http://www.daniel-zorin.ml/trip/las-vegas
@@ -351,6 +353,7 @@ http://www.daniel-zorin.ml/trip/pskov
 http://www.daniel-zorin.ml/trip/puerto-rico
 http://www.daniel-zorin.ml/trip/puschino2000
 http://www.daniel-zorin.ml/trip/pyatigorsk
+http://www.daniel-zorin.ml/trip/qatar
 http://www.daniel-zorin.ml/trip/quebec
 http://www.daniel-zorin.ml/trip/rajasthan
 http://www.daniel-zorin.ml/trip/ramenskoye

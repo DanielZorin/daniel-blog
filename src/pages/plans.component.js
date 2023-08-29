@@ -3,8 +3,8 @@ import React from 'react'
 const PlansPage = () => {
     return <>
         <p>
-			лето - Ирак (?)<br/>
-			осень - Южная Африка (?)<br/>
+			осень - Ирак<br/>
+			зима - Южная Африка (?)<br/>
         </p>
     </>
 }

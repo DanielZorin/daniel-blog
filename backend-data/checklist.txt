@@ -1,13 +1,26 @@
-prices-Austria
-prices-Italy
-prices-Germany
+Peshawar
+Islamabad
+Taxila
+Rawalpindi
+Gilgit
+Skardu road
+Skardu
+Lahore
+Multan
+Sukkur
+Larkana
+Hyderabad
+Karachi
+Hub
 ==========================
+prices-Austria
 Vienna
 St Polten
 Linz
 Graz
 Klagenfurt
 Lienz
+prices-Italy
 Fortezza
 Bolzano
 Trento
@@ -20,6 +33,7 @@ Perugia
 Pisa
 Florence
 Venice
+prices-Germany
 Nuremberg
 Bamberg
 Weimar
@@ -27,3 +41,5 @@ Erfurt
 Konya
 Cumra
 Karaman
+Doha 
+Al Khor
