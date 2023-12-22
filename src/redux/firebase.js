@@ -18,24 +18,28 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-export const firebaseFetchContents = async () => {
+export const firebaseFetchContents = async (lang = "ru") => {
     const dbRef = ref(database);
-    return get(child(dbRef, `contents`)).then((snapshot) => snapshot.val());
+    const path = `${lang}/contents`;
+    return get(child(dbRef, path)).then((snapshot) => snapshot.val());
 }
 
-export const firebaseFetchPost = async (tripId) => {
+export const firebaseFetchPost = async (tripId, lang = "ru") => {
     const dbRef = ref(database);
-    return get(child(dbRef, `trips/${tripId}`)).then((snapshot) => snapshot.val());
+    const path = `${lang}/trips/${tripId}`;
+    return get(child(dbRef, path)).then((snapshot) => snapshot.val());
 }
 
-export const firebaseFetchCountryList = async () => {
+export const firebaseFetchCountryList = async (lang = "ru") => {
     const dbRef = ref(database);
-    return get(child(dbRef, `country_list`)).then((snapshot) => snapshot.val());
+    const path = `${lang}/country_list`;
+    return get(child(dbRef, path)).then((snapshot) => snapshot.val());
 }
 
-export const firebaseFetchCities = async () => {
+export const firebaseFetchCities = async (lang = "ru") => {
     const dbRef = ref(database);
-    return get(child(dbRef, `cities`)).then((snapshot) => snapshot.val());
+    const path = `${lang}/cities`;
+    return get(child(dbRef, path)).then((snapshot) => snapshot.val());
 }
 
 export default app;

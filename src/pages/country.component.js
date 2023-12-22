@@ -3,14 +3,20 @@ import { useParams } from "react-router-dom";
 import { store } from '../redux/store'
 import { fetchContents } from '../redux/actions'
 import { useSelector } from 'react-redux'
-import { selectPostsByCountry } from '../redux/selectors.js'
+import { selectAllPosts, selectLanguage, selectPostsByCountry } from '../redux/selectors.js'
 import './year.style.scss'
 
 const CountryPage = () => {
     let { countryId } = useParams();
     let data = useSelector((state) => selectPostsByCountry(state, countryId));
+    console.log(countryId, data)
 
-    React.useEffect(() => store.dispatch(fetchContents()), []);
+    let data2 = useSelector(selectAllPosts);
+    console.log(data2)
+
+    const lang = useSelector(selectLanguage)
+
+    React.useEffect(() => store.dispatch(fetchContents(lang)), [lang]);
 
     return <div className="gridDisplay">
         {

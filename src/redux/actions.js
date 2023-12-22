@@ -3,6 +3,11 @@ import { firebaseFetchCities, firebaseFetchContents, firebaseFetchCountryList, f
 
 const URL_PREFIX = process.env.REACT_APP_URL_PREFIX ? process.env.REACT_APP_URL_PREFIX : "";
 
+export const setLanguage = (language) => ({
+    type: 'SET_LANGUAGE',
+    payload: language,
+});
+
 //synchronous action creator
 const fetchContentsSuccess = posts => ({
     type: 'FETCH_CONTENTS_SUCCESS',
@@ -32,61 +37,61 @@ const fetchSearchResultsSuccess = data => ({
 /*asynchronous thunk action creator
   calls the api, then dispatches the synchronous action creator
 */
-export const fetchContents =  () => {
+export const fetchContents = (lang = "ru") => {
     return async dispatch => {
         try {
-            let posts = await firebaseFetchContents()
+            let posts = await firebaseFetchContents(lang)
             dispatch(fetchContentsSuccess(posts))
         }
-        catch(e){
+        catch (e) {
             console.log("ERROR IN DISPATCH " + e)
         }
     }
 }
 
-export const fetchPost =  (tripId) => {
+export const fetchPost = (tripId, lang = "ru") => {
     return async dispatch => {
         try {
-            let tripData = await firebaseFetchPost(tripId)
+            let tripData = await firebaseFetchPost(tripId, lang)
             dispatch(fetchPostSuccess(tripId, tripData))
         }
-        catch(e){
+        catch (e) {
             console.log(e)
         }
     }
 }
 
-export const fetchCountryListContents =  () => {
+export const fetchCountryListContents = (lang = "ru") => {
     return async dispatch => {
         try {
-            let posts = await firebaseFetchCountryList()
+            let posts = await firebaseFetchCountryList(lang)
             dispatch(fetchCountryListSuccess(posts))
         }
-        catch(e){
+        catch (e) {
             console.log("ERROR IN DISPATCH " + e)
         }
     }
 }
 
-export const fetchCities =  () => {
+export const fetchCities = () => {
     return async dispatch => {
         try {
             let posts = await firebaseFetchCities()
             dispatch(fetchCitiesSuccess(posts))
         }
-        catch(e){
+        catch (e) {
             console.log("ERROR IN DISPATCH  " + e)
         }
     }
 }
 
-export const fetchSearchResults =  (query) => {
+export const fetchSearchResults = (query) => {
     return async dispatch => {
         try {
             let posts = await axios.get(URL_PREFIX + "/search/" + query).then(res => res.data.result)
             dispatch(fetchSearchResultsSuccess(posts))
         }
-        catch(e){
+        catch (e) {
             console.log("ERROR IN DISPATCH " + e)
         }
     }

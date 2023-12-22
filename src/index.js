@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,6 +8,7 @@ import { Provider } from 'react-redux'
 import { store } from './redux/store.js'
 
 import GA4React from "ga-4-react";
+import LanguageManager from './components/language-manager.component.js';
 
 const ga4react = new GA4React('G-W5VKV9FG1S');
 
@@ -18,9 +19,10 @@ const ga4react = new GA4React('G-W5VKV9FG1S');
   ReactDOM.render(
     <React.StrictMode>
       <Provider store={store}>
-        <BrowserRouter>
+        <Router>
+          <LanguageManager />
           <App />
-        </BrowserRouter>
+        </Router>
       </Provider>
     </React.StrictMode>,
     document.getElementById('root')

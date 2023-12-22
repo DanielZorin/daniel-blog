@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom'
 import { store } from '../redux/store'
 import { fetchContents } from '../redux/actions'
 import { useSelector } from 'react-redux'
-import { selectAllPosts } from '../redux/selectors.js'
+import { selectAllPosts, selectLanguage } from '../redux/selectors.js'
 import './contents.style.scss'
 
 const ContentsPage = () => {
-    let data = useSelector(selectAllPosts);
+    //const lang = new URLSearchParams(location.search).get('lang') || 'ru';
+    const lang = useSelector(selectLanguage)
 
-    React.useEffect(() => store.dispatch(fetchContents()), []);
+    let data = useSelector(selectAllPosts);
+    React.useEffect(() => store.dispatch(fetchContents(lang)), [lang]);
 
     let years = []
     if (data) {

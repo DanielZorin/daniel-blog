@@ -4,14 +4,16 @@ import { store } from '../redux/store'
 import { fetchPost } from '../redux/actions'
 import { useSelector } from 'react-redux'
 import { Helmet } from 'react-helmet'
-import { selectCurrentPost, selectCurrentPostId } from '../redux/selectors.js'
+import { selectCurrentPost, selectCurrentPostId, selectLanguage } from '../redux/selectors.js'
 import './contents.style.scss'
 
 const TripPage = () => {
     let { tripId } = useParams();
+    const lang = useSelector(selectLanguage)
+
     let data = useSelector(selectCurrentPost);
     let curId = useSelector(selectCurrentPostId);
-    React.useEffect(() => store.dispatch(fetchPost(tripId)), [tripId]);
+    React.useEffect(() => store.dispatch(fetchPost(tripId, lang)), [tripId, lang]);
 
     if (!data || (tripId !== curId))
         return <div></div>

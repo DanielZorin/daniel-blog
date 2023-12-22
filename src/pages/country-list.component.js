@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { fetchCountryListContents } from '../redux/actions';
-import { selectCountryList } from '../redux/selectors';
+import { selectCountryList, selectLanguage } from '../redux/selectors';
 import { useSelector } from 'react-redux'
 import { store } from '../redux/store'
 
 const CountryListPage = () => {
     let data = useSelector(selectCountryList);
+    const lang = useSelector(selectLanguage)
 
-    React.useEffect(() => store.dispatch(fetchCountryListContents()), []);
+    React.useEffect(() => store.dispatch(fetchCountryListContents(lang)), [lang]);
 
     return (
         <div>

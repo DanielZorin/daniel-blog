@@ -1,3 +1,5 @@
+export const selectLanguage = state => state.language
+
 export const selectAllPosts = state => state.posts
 
 export const selectPostsByYear = (state, year) => state.posts.filter(
