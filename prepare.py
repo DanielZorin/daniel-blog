@@ -2,6 +2,8 @@ import os, json, tqdm
 from bs4 import BeautifulSoup
 import firebase_admin
 from firebase_admin import credentials, db
+import pyuca
+
 
 links = {}
 
@@ -119,7 +121,8 @@ def prepare_list(lang = "ru"):
                 else:
                     if "," in child:
                         cities = child.split(",")
-                        cities = sorted([s.strip() for s in cities])
+                        collator = pyuca.Collator()
+                        cities = sorted([s.strip() for s in cities], key=collator.sort_key)
                     elif child:
                         if child.strip():
                             cities = [child.strip()]
@@ -175,12 +178,18 @@ def prepare_all(lang = "ru"):
         cities[country] += bookmarks
         #print(country, cities[country]) 
 
-    return {"links": links, "trips": trip_data, "contents": entries, "country_list": country_list, "cities": cities}
+    return {
+        #"links": links, 
+        "trips": trip_data, 
+        "contents": entries, 
+        "country_list": country_list, 
+        "cities": cities
+    }
 
 if __name__ == "__main__":
     data  = prepare_all("ru")
         
-    db_all = dict(data)
+    db_all = {}
     db_all["ru"] = dict(data)
     
     data  = prepare_all("en")
@@ -191,14 +200,18 @@ if __name__ == "__main__":
 
     ref = db.reference("/")
 
+    f = open("db.json", "w")
+    f.write(json.dumps(db_all, indent=4))
+    f.close()
+
     data = db_all
     data_ru = data["ru"]
     data_en = data["en"]
-    trips = data["trips"]
-    del data["trips"]
+    #trips = data["trips"]
+    #del data["trips"]
     del data["ru"]
     del data["en"]
-    ref.update(data)
+    #ref.update(data)
     '''ref.update({"trips": {}})
     ref = db.reference("/trips/")
     for trip in sorted(trips.keys()):
@@ -215,7 +228,6 @@ if __name__ == "__main__":
     ref = db.reference("/en/")
     for k in data_en:
         ref.update({k: data_en[k]})
-    ref.update({"en": data_en})
     ref.update({"ru/trips": {}})
     ref.update({"en/trips": {}})
     ref = db.reference("/ru/trips/")
@@ -230,8 +242,5 @@ if __name__ == "__main__":
         #print("en ",  trip)
         ref.update({trip: trips_en[trip]})
     
-    f = open("db.json", "w")
-    f.write(json.dumps(db_all, indent=4))
-    f.close()
     
     generate_sitemap("ru")
