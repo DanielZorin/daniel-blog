@@ -223,11 +223,21 @@ if __name__ == "__main__":
     del data_ru["trips"]
     del data_en["trips"]
     ref = db.reference("/ru/")
+    f = open("backend-data/plans-ru.json", "r", encoding="utf-8")
+    plans = json.loads(f.read())
+    f.close()
     for k in data_ru:
         ref.update({k: data_ru[k]})
+    ref.update({"plans": plans})
+    
     ref = db.reference("/en/")
+    f = open("backend-data/plans-en.json", "r")
+    plans = json.loads(f.read())
+    f.close()
     for k in data_en:
         ref.update({k: data_en[k]})
+    ref.update({"plans": plans})
+    
     ref.update({"ru/trips": {}})
     ref.update({"en/trips": {}})
     ref = db.reference("/ru/trips/")

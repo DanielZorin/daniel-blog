@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { firebaseFetchCities, firebaseFetchContents, firebaseFetchCountryList, firebaseFetchPost } from './firebase';
+import { firebaseFetchCities, firebaseFetchContents, firebaseFetchCountryList, firebaseFetchPlans, firebaseFetchPost } from './firebase';
 
 const URL_PREFIX = process.env.REACT_APP_URL_PREFIX ? process.env.REACT_APP_URL_PREFIX : "";
 
@@ -22,6 +22,11 @@ const fetchPostSuccess = (tripId, tripData) => ({
 const fetchCountryListSuccess = countryList => ({
     type: 'FETCH_COUNTRY_LIST_SUCCESS',
     payload: { countryList }
+})
+
+const fetchPlansSuccess = plans => ({
+    type: 'FETCH_PLANS_SUCCESS',
+    payload: { plans }
 })
 
 const fetchCitiesSuccess = citiesList => ({
@@ -73,10 +78,22 @@ export const fetchCountryListContents = (lang = "ru") => {
     }
 }
 
-export const fetchCities = () => {
+export const fetchPlans = (lang = "ru") => {
     return async dispatch => {
         try {
-            let posts = await firebaseFetchCities()
+            let plans = await firebaseFetchPlans(lang)
+            dispatch(fetchPlansSuccess(plans))
+        }
+        catch (e) {
+            console.log("ERROR IN DISPATCH " + e)
+        }
+    }
+}
+
+export const fetchCities = (lang = "ru") => {
+    return async dispatch => {
+        try {
+            let posts = await firebaseFetchCities(lang)
             dispatch(fetchCitiesSuccess(posts))
         }
         catch (e) {

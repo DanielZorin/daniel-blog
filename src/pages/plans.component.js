@@ -1,21 +1,24 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+import { selectLanguage, selectPlans } from '../redux/selectors';
+import { fetchPlans } from '../redux/actions';
+import { useSelector } from 'react-redux';
+import { store } from '../redux/store';
 
 const PlansPage = () => {
-    const location = useLocation();
-    const lang = new URLSearchParams(location.search).get('lang') || 'ru';
+    let data = useSelector(selectPlans);
+    const lang = useSelector(selectLanguage)
+    console.log(data)
+
+    React.useEffect(() => store.dispatch(fetchPlans(lang)), [lang]);
 
     return <>
         <p>
             {
-                lang === "ru" ?
+                data.map((entry, i) =>
                     <>
+                        {entry}
                         <br />
-                    </>
-                    :
-                    <>
-                        <br />
-                    </>
+                    </>)
             }
         </p>
     </>

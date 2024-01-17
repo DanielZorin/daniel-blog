@@ -1,4 +1,4 @@
-const INITIAL_STATE = { language: "ru", posts: [], tripData: undefined, tripId: undefined, countryList: [], citiesList: {}, searchResults: [] };
+const INITIAL_STATE = { language: "ru", posts: [], plans: [], tripData: undefined, tripId: undefined, countryList: [], citiesList: {}, searchResults: [] };
 
 const postsReducer = (state = INITIAL_STATE, action) => {
 
@@ -13,6 +13,8 @@ const postsReducer = (state = INITIAL_STATE, action) => {
             return { ...state, citiesList: action.payload.citiesList }
         case 'FETCH_SEARCH_RESULTS_SUCCESS':
             return { ...state, searchResults: action.payload.searchResults }
+        case 'FETCH_PLANS_SUCCESS':
+            return { ...state, plans: action.payload.plans }
         case 'SET_LANGUAGE':
             return { ...state, language: action.payload };
         default:

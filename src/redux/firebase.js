@@ -36,6 +36,12 @@ export const firebaseFetchCountryList = async (lang = "ru") => {
     return get(child(dbRef, path)).then((snapshot) => snapshot.val());
 }
 
+export const firebaseFetchPlans = async (lang = "ru") => {
+    const dbRef = ref(database);
+    const path = `${lang}/plans`;
+    return get(child(dbRef, path)).then((snapshot) => snapshot.val());
+}
+
 export const firebaseFetchCities = async (lang = "ru") => {
     const dbRef = ref(database);
     const path = `${lang}/cities`;
