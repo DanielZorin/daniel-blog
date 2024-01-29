@@ -245,6 +245,7 @@ if __name__ == "__main__":
     for trip in tqdm.tqdm(sorted(trips_ru.keys())):
         #print("ru ",  trip)
         ref.update({trip: trips_ru[trip]})
+        pass
         
     ref = db.reference("/en/trips/")
     print("Uploading to firebase en")
