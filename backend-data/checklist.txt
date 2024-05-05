@@ -1,35 +1,4 @@
-South Africa review
-Cape Town
-Cape Town-2
-Cape Town-food
-Hout Bay
-Cape of Good Hope
-Simon's Town
-Stellenbosch
-Durban
-Zimbabwe review
-Harare
-Zimbabwe road
-Lusaka
-Zambia road
-Livingstone
-Vic. Falls
-Victoria Falls
-Bulawayo
-Francistown
-Gaborone
-Rustenburg
-Pilanesberg
-Johannesburg
-Pretoria
-Emalahleni
-Maputo
-Hlane
-Manzini
-Mbabane
-Qatar
+prices-France
+prices-Benelux
+Antalya
 ==========================
-Cirali
-Altinyaka
-Antalya-1
-Antalya-2
