@@ -1,4 +1,2 @@
-prices-France
-prices-Benelux
-Antalya
 ==========================
+Antalya
