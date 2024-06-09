@@ -3,7 +3,7 @@ import './header.style.scss'
 import { Link } from 'react-router-dom'
 import LanguageSwitcher from './language-switcher.component.js'
 import SearchPage from '../pages/search.component'
-import { useLocation } from 'react-router-dom/cjs/react-router-dom.min.js'
+import { useLocation } from 'react-router-dom'
 
 function Header() {
     const [search, setSearch] = useState('')

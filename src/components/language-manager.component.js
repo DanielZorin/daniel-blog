@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { setLanguage } from '../redux/actions';
 
 const LanguageManager = () => {
   const dispatch = useDispatch();
-  const history = useHistory();
+  const navigate = useNavigate();
   const location = useLocation();
   const lang = useSelector((state) => state.language);
 
@@ -19,9 +19,11 @@ const LanguageManager = () => {
         searchParams.set('lang', lang);
     }
 
-    history.replace({ search: searchParams.toString() });
+    navigate({
+      search: searchParams.toString()
+    }, { replace: true });
 
-  }, [lang, location.search, history, dispatch]);
+  }, [lang, location.search, navigate, dispatch]);
 
   return null; 
 };

@@ -1,11 +1,11 @@
 import React from 'react'
 import { store } from '../redux/store'
 import { setLanguage } from '../redux/actions'; 
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './header.style.scss'
 
 function LanguageSwitcher() {
-    const history = useHistory();
+    const history = useNavigate();
     const location = useLocation();
 
     const switchToLanguage = (newLang, event) => {
