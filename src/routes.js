@@ -3,7 +3,7 @@ import {
   createRoutesFromElements,
   useLocation,
 } from "react-router-dom";
-import "./App.css";
+import "./index.css";
 import Header from "./components/header.component.js";
 import MapPage from "./pages/map.component.js";
 import ContentsPage from "./pages/contents.component.js";

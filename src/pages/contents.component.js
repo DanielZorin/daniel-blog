@@ -1,18 +1,16 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
 import { useQuery } from "@tanstack/react-query";
 import { LoadingContainer } from "../components/loading-container.js";
-import "./contents.style.scss";
 import { firebaseFetchContents } from "../redux/firebase.js";
+import "./contents.style.scss";
+import useLanguage from "../redux/use-language.js";
 
 const ContentsPage = () => {
-  //const lang = new URLSearchParams(location.search).get('lang') || 'ru';
-  //const lang = useSelector(selectLanguage);
-    const lang = "ru"
+  const { language } = useLanguage();
   const { data, isLoading, isFetching } = useQuery({
-    queryKey: ["contents", lang],
-    queryFn: () => firebaseFetchContents(lang),
+    queryKey: ["contents", language],
+    queryFn: () => firebaseFetchContents(language),
   });
 
   if (isLoading || isFetching) return <LoadingContainer />;
@@ -25,16 +23,16 @@ const ContentsPage = () => {
   }
 
   return years.map((year, j) => (
-    <div key={j}>
-      <h2>
+    <div key={j} className="pl-[50px]">
+      <div>
         <Link className="yearLink" to={"year/" + year.toString()}>
           {year}
         </Link>
-      </h2>
+      </div>
       {data
         .filter((entry) => entry.year === year)
         .map((entry, i) => (
-          <p key={i}>
+          <div key={i}>
             {entry.link ? (
               <Link className="tripLink" to={entry.link}>
                 {entry.name}
@@ -42,7 +40,7 @@ const ContentsPage = () => {
             ) : (
               <span className="tripLinkFuture">{entry.name}</span>
             )}
-          </p>
+          </div>
         ))}
     </div>
   ));

@@ -3,16 +3,18 @@ import { store } from '../redux/store'
 import { setLanguage } from '../redux/actions'; 
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './header.style.scss'
+import useLanguage from '../redux/use-language';
 
 function LanguageSwitcher() {
-    const history = useNavigate();
+    const { setLanguage } = useLanguage()
+    const navigate = useNavigate();
     const location = useLocation();
 
     const switchToLanguage = (newLang, event) => {
         event.preventDefault();
         const currentPath = location.pathname;
-        history.push(`${currentPath}?lang=${newLang}`);
-        store.dispatch(setLanguage(newLang));
+        navigate(`${currentPath}?lang=${newLang}`);
+        setLanguage(newLang)
     };
 
     return (
