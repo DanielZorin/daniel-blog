@@ -1,16 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { fetchCountryListContents } from '../redux/actions';
-import { selectCountryList, selectLanguage } from '../redux/selectors';
-import { useSelector } from 'react-redux'
-import { store } from '../redux/store'
+import { firebaseFetchCountryList } from '../redux/firebase';
+import useLanguage from '../redux/use-language';
+import { useQuery } from '@tanstack/react-query';
+import { LoadingContainer } from '../components/loading-container';
 
 const CountryListPage = () => {
-    let data = useSelector(selectCountryList);
-    const lang = useSelector(selectLanguage)
-
-    React.useEffect(() => store.dispatch(fetchCountryListContents(lang)), [lang]);
-
+    const { language } = useLanguage();
+    const { data, isLoading, isFetching } = useQuery({
+      queryKey: ["country-list", language],
+      queryFn: () => firebaseFetchCountryList(language),
+      staleTime: Infinity
+    });
+  
+    if (isLoading || isFetching) return <LoadingContainer />;
     return (
         <div>
             <ol>

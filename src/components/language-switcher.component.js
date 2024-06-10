@@ -1,6 +1,4 @@
 import React from 'react'
-import { store } from '../redux/store'
-import { setLanguage } from '../redux/actions'; 
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './header.style.scss'
 import useLanguage from '../redux/use-language';

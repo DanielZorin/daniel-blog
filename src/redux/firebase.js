@@ -25,6 +25,7 @@ export const firebaseFetchContents = async (lang = "ru") => {
 }
 
 export const firebaseFetchPost = async (tripId, lang = "ru") => {
+    console.log("fetching")
     const dbRef = ref(database);
     const path = `${lang}/trips/${tripId}`;
     return get(child(dbRef, path)).then((snapshot) => snapshot.val());

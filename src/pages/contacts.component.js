@@ -1,10 +1,9 @@
 import React from 'react'
 import './contacts.style.scss'
-import { useSelector } from 'react-redux'
-import { selectLanguage } from '../redux/selectors'
+import useLanguage from '../redux/use-language'
 
 const ContactsPage = () => {
-    const lang = useSelector(selectLanguage)
+    const { language: lang } = useLanguage();
 
     return <>
         <link

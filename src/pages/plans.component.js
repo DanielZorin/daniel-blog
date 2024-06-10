@@ -1,16 +1,18 @@
 import React from 'react'
-import { selectLanguage, selectPlans } from '../redux/selectors';
-import { fetchPlans } from '../redux/actions';
-import { useSelector } from 'react-redux';
-import { store } from '../redux/store';
+import { firebaseFetchPlans } from '../redux/firebase';
+import { useQuery } from '@tanstack/react-query';
+import useLanguage from '../redux/use-language';
+import { LoadingContainer } from '../components/loading-container';
 
 const PlansPage = () => {
-    let data = useSelector(selectPlans);
-    const lang = useSelector(selectLanguage)
-    console.log(data)
+    const { language } = useLanguage();
+  const { data, isLoading, isFetching } = useQuery({
+    queryKey: ["plans", language],
+    queryFn: () => firebaseFetchPlans(language),
+    staleTime: Infinity
+  });
 
-    React.useEffect(() => store.dispatch(fetchPlans(lang)), [lang]);
-
+  if (isLoading || isFetching) return <LoadingContainer />;
     return <>
         <p>
             {

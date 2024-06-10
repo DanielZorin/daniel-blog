@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { LoadingContainer } from "../components/loading-container.js";
@@ -11,6 +11,7 @@ const ContentsPage = () => {
   const { data, isLoading, isFetching } = useQuery({
     queryKey: ["contents", language],
     queryFn: () => firebaseFetchContents(language),
+    staleTime: Infinity
   });
 
   if (isLoading || isFetching) return <LoadingContainer />;
