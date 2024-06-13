@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import "./contents.style.scss";
 import useLanguage from "../redux/use-language.js";
 import { useQuery } from "@tanstack/react-query";
@@ -21,11 +20,6 @@ const TripPage = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>{data.title} - Daniel A. Zorin</title>
-        <meta name="description" content="Blog post" />
-      </Helmet>
-
       <h1>{data.title}</h1>
       <i>{data.dates}</i>
       {data.content.map((e, i) => {
