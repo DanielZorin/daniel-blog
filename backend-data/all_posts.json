@@ -1,0 +1,812 @@
+{
+    "ru-guide-germany": {
+        "date": "11/01/2023",
+        "name": "guide-germany",
+        "title": "Германия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-italy": {
+        "date": "10/02/2023",
+        "name": "guide-italy",
+        "title": "Италия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-austria": {
+        "date": "09/15/2023",
+        "name": "guide-austria",
+        "title": "Австрия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-pakistan": {
+        "date": "08/27/2023",
+        "name": "guide-pakistan",
+        "title": "Пакистан - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-georgia": {
+        "date": "08/18/2023",
+        "name": "guide-georgia",
+        "title": "Грузия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-armenia": {
+        "date": "08/02/2023",
+        "name": "guide-armenia",
+        "title": "Армения - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-oman": {
+        "date": "03/31/2023",
+        "name": "guide-oman",
+        "title": "ОАЭ и Оман - цена вопроса",
+        "language": "ru"
+    },
+    "ru-new-year-2022": {
+        "date": "12/31/2022",
+        "name": "new-year-2022",
+        "title": "Итоги 2022 года",
+        "language": "ru"
+    },
+    "ru-guide-saudi": {
+        "date": "12/20/2022",
+        "name": "guide-saudi",
+        "title": "Саудовская Аравия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-lebanon": {
+        "date": "11/27/2022",
+        "name": "guide-lebanon",
+        "title": "Ливан - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-iran": {
+        "date": "09/18/2022",
+        "name": "guide-iran",
+        "title": "Иран - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-caribbean": {
+        "date": "05/21/2022",
+        "name": "guide-caribbean",
+        "title": "Карибские острова - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-turkey": {
+        "date": "01/28/2022",
+        "name": "guide-turkey",
+        "title": "Турция - цена вопроса",
+        "language": "ru"
+    },
+    "ru-new-year-2021": {
+        "date": "12/29/2021",
+        "name": "new-year-2021",
+        "title": "Итоги 2021 года",
+        "language": "ru"
+    },
+    "ru-guide-panama": {
+        "date": "11/16/2021",
+        "name": "guide-panama",
+        "title": "Центральная Америка - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-romania": {
+        "date": "11/11/2021",
+        "name": "guide-romania",
+        "title": "Румыния - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-brazil": {
+        "date": "06/17/2021",
+        "name": "guide-brazil",
+        "title": "Бразилия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-bolivia": {
+        "date": "04/22/2021",
+        "name": "guide-bolivia",
+        "title": "Боливия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-new-year-2020": {
+        "date": "12/31/2020",
+        "name": "new-year-2020",
+        "title": "Итоги 2020 года",
+        "language": "ru"
+    },
+    "ru-guide-usa": {
+        "date": "02/22/2020",
+        "name": "guide-usa",
+        "title": "Соединенные Штаты Америки - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-oceania": {
+        "date": "02/09/2020",
+        "name": "guide-oceania",
+        "title": "Океания - цена вопроса",
+        "language": "ru"
+    },
+    "ru-new-year-2019": {
+        "date": "12/30/2019",
+        "name": "new-year-2019",
+        "title": "Итоги 2019 года",
+        "language": "ru"
+    },
+    "ru-guide-uk": {
+        "date": "10/18/2019",
+        "name": "guide-uk",
+        "title": "Великобритания - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-ireland": {
+        "date": "09/06/2019",
+        "name": "guide-ireland",
+        "title": "Ирландия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-australia": {
+        "date": "04/27/2019",
+        "name": "guide-australia",
+        "title": "Австралия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-new-zealand": {
+        "date": "04/13/2019",
+        "name": "guide-new-zealand",
+        "title": "Новая Зеландия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-canada": {
+        "date": "03/13/2019",
+        "name": "guide-canada",
+        "title": "Канада - цена вопроса",
+        "language": "ru"
+    },
+    "ru-new-year-2018": {
+        "date": "12/31/2018",
+        "name": "new-year-2018",
+        "title": "Итоги 2018 года",
+        "language": "ru"
+    },
+    "ru-new-year-2017": {
+        "date": "12/30/2017",
+        "name": "new-year-2017",
+        "title": "Итоги 2017 года",
+        "language": "ru"
+    },
+    "ru-guide-japan": {
+        "date": "12/19/2017",
+        "name": "guide-japan",
+        "title": "Япония - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-india": {
+        "date": "08/11/2017",
+        "name": "guide-india",
+        "title": "Индия - страна безысходности и уныния. Часть II",
+        "language": "ru"
+    },
+    "ru-guide-nepal": {
+        "date": "07/02/2017",
+        "name": "guide-nepal",
+        "title": "Непал - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-bangladesh": {
+        "date": "06/27/2017",
+        "name": "guide-bangladesh",
+        "title": "Бангладеш - цена вопроса",
+        "language": "ru"
+    },
+    "ru-new-year-2016": {
+        "date": "12/30/2016",
+        "name": "new-year-2016",
+        "title": "Итоги 2016 года",
+        "language": "ru"
+    },
+    "ru-guide-dominicana": {
+        "date": "11/30/2016",
+        "name": "guide-dominicana",
+        "title": "Доминикана - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-gibraltar": {
+        "date": "08/26/2016",
+        "name": "guide-gibraltar",
+        "title": "Западная Европа - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-sri-lanka": {
+        "date": "07/19/2016",
+        "name": "guide-sri-lanka",
+        "title": "Шри-Ланка и Мальдивы - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-indonesia": {
+        "date": "06/18/2016",
+        "name": "guide-indonesia",
+        "title": "Индонезия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-east-timor": {
+        "date": "05/19/2016",
+        "name": "guide-east-timor",
+        "title": "Восточный Тимор - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-singapore": {
+        "date": "04/27/2016",
+        "name": "guide-singapore",
+        "title": "Сингапур - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-malaysia": {
+        "date": "04/19/2016",
+        "name": "guide-malaysia",
+        "title": "Малайзия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-myanmar": {
+        "date": "02/14/2016",
+        "name": "guide-myanmar",
+        "title": "Мьянма - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-laos": {
+        "date": "01/17/2016",
+        "name": "guide-laos",
+        "title": "Лаос - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-cambodia": {
+        "date": "01/04/2016",
+        "name": "guide-cambodia",
+        "title": "Камбоджа- цена вопроса",
+        "language": "ru"
+    },
+    "ru-new-year-2015": {
+        "date": "12/30/2015",
+        "name": "new-year-2015",
+        "title": "Итоги года 2015",
+        "language": "ru"
+    },
+    "ru-guide-thailand": {
+        "date": "10/29/2015",
+        "name": "guide-thailand",
+        "title": "Таиланд - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-vietnam": {
+        "date": "08/24/2015",
+        "name": "guide-vietnam",
+        "title": "Вьетнам - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-hong-kong": {
+        "date": "08/11/2015",
+        "name": "guide-hong-kong",
+        "title": "Гонконг - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-taiwan": {
+        "date": "07/30/2015",
+        "name": "guide-taiwan",
+        "title": "Тайвань - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-philippines": {
+        "date": "07/17/2015",
+        "name": "guide-philippines",
+        "title": "Филиппины - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-south-korea": {
+        "date": "06/20/2015",
+        "name": "guide-south-korea",
+        "title": "Южная Корея - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-china": {
+        "date": "05/02/2015",
+        "name": "guide-china",
+        "title": "Итоги апреля, Китай. Месяц безудержного наслаждения",
+        "language": "ru"
+    },
+    "ru-guide-china2": {
+        "date": "04/01/2015",
+        "name": "guide-china2",
+        "title": "Итоги марта, Китай",
+        "language": "ru"
+    },
+    "ru-guide-germany2": {
+        "date": "02/19/2015",
+        "name": "guide-germany2",
+        "title": "Европа при 75 рублей за евро: цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-mongolia": {
+        "date": "01/15/2015",
+        "name": "guide-mongolia",
+        "title": "Зимняя Сибирь и Монголия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-new-year-2014": {
+        "date": "12/31/2014",
+        "name": "new-year-2014",
+        "title": "Итоги 2014 года",
+        "language": "ru"
+    },
+    "ru-guide-mexico": {
+        "date": "12/02/2014",
+        "name": "guide-mexico",
+        "title": "Мексика - цена вопроса",
+        "language": "ru"
+    },
+    "ru-new-year-2013": {
+        "date": "12/30/2013",
+        "name": "new-year-2013",
+        "title": "Итоги 2013 года",
+        "language": "ru"
+    },
+    "ru-new-year-2023": {
+        "date": "12/30/2023",
+        "name": "new-year-2023",
+        "title": "Итоги 2023 года",
+        "language": "ru"
+    },
+    "ru-guide-iraq": {
+        "date": "11/13/2023",
+        "name": "guide-iraq",
+        "title": "Ирак - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-hungary": {
+        "date": "02/28/2024",
+        "name": "guide-hungary",
+        "title": "Венгрия - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-south-africa": {
+        "date": "05/10/2024",
+        "name": "guide-south-africa",
+        "title": "Южная Африка - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-denmark": {
+        "date": "04/12/2024",
+        "name": "guide-denmark",
+        "title": "Дания - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-spain": {
+        "date": "03/08/2024",
+        "name": "guide-spain",
+        "title": "Испания - цена вопроса",
+        "language": "ru"
+    },
+    "ru-guide-zimbabwe": {
+        "date": "05/13/2024",
+        "name": "guide-zimbabwe",
+        "title": "Зимбабве, Замбия, Ботсвана, Мозамбик, Эсватини - цена вопроса",
+        "language": "ru"
+    },
+    "en-guide-germany": {
+        "date": "11/01/2023",
+        "title": "Germany travel guide",
+        "name": "guide-germany",
+        "language": "en"
+    },
+    "en-guide-italy": {
+        "date": "10/02/2023",
+        "title": "Italy travel guide",
+        "name": "guide-italy",
+        "language": "en"
+    },
+    "en-guide-austria": {
+        "date": "09/15/2023",
+        "title": "Austria travel guide",
+        "name": "guide-austria",
+        "language": "en"
+    },
+    "en-guide-pakistan": {
+        "date": "08/27/2023",
+        "title": "Pakistan travel guide",
+        "name": "guide-pakistan",
+        "language": "en"
+    },
+    "en-guide-georgia": {
+        "date": "11/14/2023",
+        "title": "Georgia travel guide",
+        "name": "guide-georgia",
+        "language": "en"
+    },
+    "en-guide-armenia": {
+        "date": "08/02/2023",
+        "title": "Armenia travel guide",
+        "name": "guide-armenia",
+        "language": "en"
+    },
+    "en-guide-oman": {
+        "date": "03/31/2023",
+        "title": "UAE and Oman travel guide",
+        "name": "guide-oman",
+        "language": "en"
+    },
+    "en-new-year-2022": {
+        "date": "12/31/2022",
+        "title": "Review of year 2022",
+        "name": "new-year-2022",
+        "language": "en"
+    },
+    "en-guide-bahrain": {
+        "date": "12/20/2022",
+        "title": "Saudi Arabia travel guide",
+        "name": "guide-bahrain",
+        "language": "en"
+    },
+    "en-guide-lebanon": {
+        "date": "11/27/2022",
+        "title": "Lebanon travel guide",
+        "name": "guide-lebanon",
+        "language": "en"
+    },
+    "en-guide-iran": {
+        "date": "09/18/2022",
+        "title": "Iran travel guide",
+        "name": "guide-iran",
+        "language": "en"
+    },
+    "en-guide-saint kitts and nevis": {
+        "date": "05/21/2022",
+        "title": "Caribbean islands travel guide",
+        "name": "guide-saint kitts and nevis",
+        "language": "en"
+    },
+    "en-guide-turkey": {
+        "date": "01/28/2022",
+        "title": "Turkey travel guide",
+        "name": "guide-turkey",
+        "language": "en"
+    },
+    "en-new-year-2021": {
+        "date": "12/29/2021",
+        "title": "Review of year 2021",
+        "name": "new-year-2021",
+        "language": "en"
+    },
+    "en-guide-honduras": {
+        "date": "11/16/2021",
+        "title": "Central America travel guide",
+        "name": "guide-honduras",
+        "language": "en"
+    },
+    "en-guide-romania": {
+        "date": "11/11/2021",
+        "title": "Romania travel guide",
+        "name": "guide-romania",
+        "language": "en"
+    },
+    "en-guide-brazil": {
+        "date": "06/17/2021",
+        "title": "Brazil travel guide",
+        "name": "guide-brazil",
+        "language": "en"
+    },
+    "en-guide-bolivia": {
+        "date": "04/22/2021",
+        "title": "Bolivia travel guide",
+        "name": "guide-bolivia",
+        "language": "en"
+    },
+    "en-new-year-2020": {
+        "date": "12/31/2020",
+        "title": "Review of year 2020",
+        "name": "new-year-2020",
+        "language": "en"
+    },
+    "en-guide-usa": {
+        "date": "02/22/2020",
+        "title": "United States of America travel guide",
+        "name": "guide-usa",
+        "language": "en"
+    },
+    "en-guide-northern mariana islands": {
+        "date": "02/09/2020",
+        "title": "Oceania travel guide",
+        "name": "guide-northern mariana islands",
+        "language": "en"
+    },
+    "en-new-year-2019": {
+        "date": "12/30/2019",
+        "title": "Review of year 2019",
+        "name": "new-year-2019",
+        "language": "en"
+    },
+    "en-guide-uk": {
+        "date": "10/18/2019",
+        "title": "United Kingdom travel guide",
+        "name": "guide-uk",
+        "language": "en"
+    },
+    "en-guide-ireland": {
+        "date": "09/06/2019",
+        "title": "Ireland travel guide",
+        "name": "guide-ireland",
+        "language": "en"
+    },
+    "en-guide-australia": {
+        "date": "04/27/2019",
+        "title": "Australia travel guide",
+        "name": "guide-australia",
+        "language": "en"
+    },
+    "en-guide-new zealand": {
+        "date": "04/13/2019",
+        "title": "New Zealand travel guide",
+        "name": "guide-new zealand",
+        "language": "en"
+    },
+    "en-guide-canada": {
+        "date": "03/13/2019",
+        "title": "Canada travel guide",
+        "name": "guide-canada",
+        "language": "en"
+    },
+    "en-new-year-2018": {
+        "date": "12/31/2018",
+        "title": "Review of year 2018",
+        "name": "new-year-2018",
+        "language": "en"
+    },
+    "en-new-year-2017": {
+        "date": "12/30/2017",
+        "title": "Review of year 2017",
+        "name": "new-year-2017",
+        "language": "en"
+    },
+    "en-guide-japan": {
+        "date": "12/19/2017",
+        "title": "Япония - страна, пробившая небеса",
+        "name": "guide-japan",
+        "language": "en"
+    },
+    "en-guide-india": {
+        "date": "08/11/2017",
+        "title": "Индия - страна безысходности и уныния. Часть II",
+        "name": "guide-india",
+        "language": "en"
+    },
+    "en-guide-india2": {
+        "date": "08/10/2017",
+        "title": "Индия - страна безысходности и уныния",
+        "name": "guide-india2",
+        "language": "en"
+    },
+    "en-guide-nepal": {
+        "date": "07/02/2017",
+        "title": "Nepal travel guide",
+        "name": "guide-nepal",
+        "language": "en"
+    },
+    "en-guide-bangladesh": {
+        "date": "06/27/2017",
+        "title": "Bangladesh travel guide",
+        "name": "guide-bangladesh",
+        "language": "en"
+    },
+    "en-new-year-2016": {
+        "date": "12/30/2016",
+        "title": "Review of year 2016",
+        "name": "new-year-2016",
+        "language": "en"
+    },
+    "en-guide-dominicana": {
+        "date": "11/30/2016",
+        "title": "Dominican republic travel guide",
+        "name": "guide-dominicana",
+        "language": "en"
+    },
+    "en-guide-gibraltar": {
+        "date": "08/26/2016",
+        "title": "Западная Европа: цена вопроса",
+        "name": "guide-gibraltar",
+        "language": "en"
+    },
+    "en-guide-sri lanka": {
+        "date": "07/19/2016",
+        "title": "Sri Lanka & Maldives travel guide",
+        "name": "guide-sri lanka",
+        "language": "en"
+    },
+    "en-guide-indonesia": {
+        "date": "06/18/2016",
+        "title": "Индонезия - страна больших контрастов",
+        "name": "guide-indonesia",
+        "language": "en"
+    },
+    "en-guide-east timor": {
+        "date": "05/19/2016",
+        "title": "East Timor travel guide",
+        "name": "guide-east timor",
+        "language": "en"
+    },
+    "en-guide-singapore": {
+        "date": "04/27/2016",
+        "title": "Singapore travel guide",
+        "name": "guide-singapore",
+        "language": "en"
+    },
+    "en-guide-malaysia": {
+        "date": "04/19/2016",
+        "title": "Малайзия - лучшая страна Азии",
+        "name": "guide-malaysia",
+        "language": "en"
+    },
+    "en-guide-myanmar": {
+        "date": "02/14/2016",
+        "title": "Myanmar travel guide",
+        "name": "guide-myanmar",
+        "language": "en"
+    },
+    "en-guide-laos": {
+        "date": "01/17/2016",
+        "title": "Laos travel guide",
+        "name": "guide-laos",
+        "language": "en"
+    },
+    "en-guide-cambodia": {
+        "date": "01/04/2016",
+        "title": "Cambodia travel guide",
+        "name": "guide-cambodia",
+        "language": "en"
+    },
+    "en-new-year-2015": {
+        "date": "12/30/2015",
+        "title": "Review of year 2015",
+        "name": "new-year-2015",
+        "language": "en"
+    },
+    "en-guide-thailand": {
+        "date": "10/29/2015",
+        "title": "Таиланд: цена вопроса",
+        "name": "guide-thailand",
+        "language": "en"
+    },
+    "en-guide-vietnam": {
+        "date": "08/24/2015",
+        "title": "Vietnam travel guide",
+        "name": "guide-vietnam",
+        "language": "en"
+    },
+    "en-guide-hong kong": {
+        "date": "08/11/2015",
+        "title": "Hong Kong travel guide",
+        "name": "guide-hong kong",
+        "language": "en"
+    },
+    "en-guide-taiwan": {
+        "date": "07/30/2015",
+        "title": "Taiwan travel guide",
+        "name": "guide-taiwan",
+        "language": "en"
+    },
+    "en-guide-philippines": {
+        "date": "07/17/2015",
+        "title": "Philippines travel guide",
+        "name": "guide-philippines",
+        "language": "en"
+    },
+    "en-guide-south korea": {
+        "date": "06/20/2015",
+        "title": "South Korea travel guide",
+        "name": "guide-south korea",
+        "language": "en"
+    },
+    "en-guide-china": {
+        "date": "05/02/2015",
+        "title": "Итоги апреля, Китай. Месяц безудержного наслаждения",
+        "name": "guide-china",
+        "language": "en"
+    },
+    "en-guide-china2": {
+        "date": "04/01/2015",
+        "title": "Итоги марта, Китай",
+        "name": "guide-china2",
+        "language": "en"
+    },
+    "en-guide-poland": {
+        "date": "02/19/2015",
+        "title": "Европа при 75 рублей за евро: цена вопроса",
+        "name": "guide-poland",
+        "language": "en"
+    },
+    "en-guide-russia": {
+        "date": "01/15/2015",
+        "title": "Mongolia & Siberia travel guide",
+        "name": "guide-russia",
+        "language": "en"
+    },
+    "en-new-year-2014": {
+        "date": "12/31/2014",
+        "title": "Review of year 2014",
+        "name": "new-year-2014",
+        "language": "en"
+    },
+    "en-guide-mexico": {
+        "date": "12/02/2014",
+        "title": "Mexico travel guide",
+        "name": "guide-mexico",
+        "language": "en"
+    },
+    "en-new-year-2013": {
+        "date": "12/30/2013",
+        "title": "Review of year 2013",
+        "name": "new-year-2013",
+        "language": "en"
+    },
+    "en-new-year-2023": {
+        "date": "12/30/2023",
+        "title": "Review of year 2023",
+        "name": "new-year-2023",
+        "language": "en"
+    },
+    "en-guide-iraq": {
+        "date": "11/12/2023",
+        "title": "Iraq travel guide",
+        "name": "guide-iraq",
+        "language": "en"
+    },
+    "en-guide-hungary": {
+        "date": "02/28/2024",
+        "title": "Hungary travel guide",
+        "name": "guide-hungary",
+        "language": "en"
+    },
+    "en-guide-south africa": {
+        "date": "05/10/2024",
+        "title": "South Africa travel guide",
+        "name": "guide-south africa",
+        "language": "en"
+    },
+    "en-guide-denmark": {
+        "date": "04/12/2024",
+        "title": "Denmark travel guide",
+        "name": "guide-denmark",
+        "language": "en"
+    },
+    "en-guide-spain": {
+        "date": "03/08/2024",
+        "title": "Spain travel guide",
+        "name": "guide-spain",
+        "language": "en"
+    },
+    "en-guide-mozambique": {
+        "date": "05/13/2024",
+        "title": "Zimbabwe, Zambia, Botswana, Mozambique, Eswatini travel guide",
+        "name": "guide-mozambique",
+        "language": "en"
+    },
+    "ru-guide-france": {
+        "date": "04/10/2024",
+        "title": "Франция - цена вопроса",
+        "name": "guide-france",
+        "language": "ru"
+    },
+    "ru-guide-benelux": {
+        "date": "04/14/2024",
+        "title": "Бельгия, Нидерланды, Люксембург - цена вопроса",
+        "name": "guide-benelux",
+        "language": "ru"
+    },
+    "en-guide-france": {
+        "date": "04/10/2024",
+        "title": "France travel guide",
+        "name": "guide-france",
+        "language": "en"
+    },
+    "en-guide-benelux": {
+        "date": "04/14/2024",
+        "title": "Belgium, Netherlands, Luxembourg travel guide",
+        "name": "guide-benelux",
+        "language": "en"
+    }
+}
