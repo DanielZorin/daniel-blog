@@ -53,6 +53,7 @@ const routes = createRoutesFromElements(
     <Route path="/:lang" element={<FeedPage />} />
     <Route path="/:lang/history" element={<ContentsPage />} />
     <Route path="/:lang/trip/:tripId" element={<TripPage />} />
+    <Route path="/:lang/post/:tripId" element={<TripPage />} />
     <Route exact path="/:lang/year/:year" element={<YearPage />} />
     <Route exact path="/:lang/country/:countryId" element={CountryPage} />
     <Route exact path="/:lang/cities/:countryId" element={CitiesPage} />

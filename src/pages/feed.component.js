@@ -20,9 +20,9 @@ const FeedPage = () => {
   });
 
   useEffect(() => {
-    if(data) {
-    setTotalPages(data.totalPages);
-    setTotalPosts(data.totalPosts);
+    if (data) {
+      setTotalPages(data.totalPages);
+      setTotalPosts(data.totalPosts);
     }
   }, [data]);
 
@@ -32,9 +32,16 @@ const FeedPage = () => {
     <>
       {data.posts.map((post, j) => (
         <div key={j} className="border-[2px] p-3 flex flex-col">
-          <div className="text-[20px]">{post.title}</div>
+          <div className="text-[20px]">
+            <a href={`${language}/post/${post.id}`}>{post.title}</a>
+          </div>
           <div className="text-[12px]">{post.date}</div>
-          <div dangerouslySetInnerHTML={{ __html: post.preview}}></div>
+          <div dangerouslySetInnerHTML={{ __html: post.preview }}></div>
+          <div>
+            <a href={`./post/${post.id}`}>
+              {language == "en" ? "Read more..." : "Читать дальше..."}
+            </a>
+          </div>
         </div>
       ))}
       <Pagination

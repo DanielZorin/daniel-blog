@@ -26,7 +26,7 @@ const ContentsPage = () => {
   return years.map((year, j) => (
     <div key={j} className="pl-[50px]">
       <div>
-        <Link className="yearLink" to={"../year/" + year.toString()}>
+        <Link className="yearLink" to={`/${language}/year/${year.toString()}`}>
           {year}
         </Link>
       </div>
@@ -35,7 +35,7 @@ const ContentsPage = () => {
         .map((entry, i) => (
           <div key={i}>
             {entry.link ? (
-              <Link className="tripLink" to={"../" + entry.link}>
+              <Link className="tripLink" to={`/${language}/${entry.link}`}>
                 {entry.name}
               </Link>
             ) : (

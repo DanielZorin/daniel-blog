@@ -135,6 +135,7 @@ def load_trip(name, lang="ru"):
         else:
             result["preview"] = "<br/>".join(preview) + "<br/>" + "<img src=\"" + e["src"] + "\">"
             break
+    result["post_type"] = "trip"
     return result
     
 def get_preview(trip, trip_data, bookmark=""):
@@ -360,6 +361,7 @@ if __name__ == "__main__":
     for guide in guides.keys():
         post = guides[guide]
         post["id"] = post["name"]
+        post["post_type"] = "other"
         post["date"] = datetime.datetime.strptime(post["date"], "%m/%d/%Y").date().isoformat()
         f = open("backend-data/guides/" + guide + ".html", "r", encoding="utf-8")
         post["content"] = f.read()

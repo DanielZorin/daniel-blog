@@ -13,41 +13,62 @@ const TripPage = () => {
   const { data, isLoading, isFetching } = useQuery({
     queryKey: ["trip", tripId, language],
     queryFn: () => firebaseFetchPost(tripId, language),
-    staleTime: Infinity
+    staleTime: Infinity,
   });
 
   if (isLoading || isFetching) return <LoadingContainer />;
 
-  return (
-    <div>
-      <h1>{data.title}</h1>
-      <i>{data.dates}</i>
-      {data.content.map((e, i) => {
-        switch (e.type) {
-          case "text":
-            return <p key={`text-${i}`} dangerouslySetInnerHTML={{ __html: e.src }}></p>;
-          case "image":
-            return <img key={`img-${i}`} alt="" className="trip-photo" src={e.src} />;
-          case "section":
-            return (
-              <>
-                <a name={e.bookmark} id={e.bookmark}></a>
-                <h2 key={i}>{e.src}</h2>
-              </>
-            );
-          case "separator":
-            return (
-              <>
-                <a name={e.bookmark} id={e.bookmark}></a>
-                <center key={i}> * * * </center>
-              </>
-            );
-          default:
-            return "";
-        }
-      })}
-    </div>
-  );
+  if (data.post_type !== "trip") {
+    return (
+      <div>
+        <h1>{data.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: data.content }}></div>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <h1>{data.title}</h1>
+        <i>{data.dates}</i>
+        {data.content.map((e, i) => {
+          switch (e.type) {
+            case "text":
+              return (
+                <p
+                  key={`text-${i}`}
+                  dangerouslySetInnerHTML={{ __html: e.src }}
+                ></p>
+              );
+            case "image":
+              return (
+                <img
+                  key={`img-${i}`}
+                  alt=""
+                  className="trip-photo"
+                  src={e.src}
+                />
+              );
+            case "section":
+              return (
+                <>
+                  <a name={e.bookmark} id={e.bookmark}></a>
+                  <h2 key={i}>{e.src}</h2>
+                </>
+              );
+            case "separator":
+              return (
+                <>
+                  <a name={e.bookmark} id={e.bookmark}></a>
+                  <center key={i}> * * * </center>
+                </>
+              );
+            default:
+              return "";
+          }
+        })}
+      </div>
+    );
+  }
 };
 
 export default TripPage;

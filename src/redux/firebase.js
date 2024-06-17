@@ -96,7 +96,8 @@ export const firebaseFetchPostFeed = async (lang, page, per_page = 10) => {
 
 export const firebaseFetchPost = async (tripId, lang = "ru") => {
   const dbRef = ref(database);
-  const path = `${lang}/posts/${tripId}`;
+  const path = `${lang}/posts/${lang}-${tripId}`;
+  console.log(path)
   return get(child(dbRef, path)).then((snapshot) => snapshot.val());
 };
 
