@@ -1,6 +1,14 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, child, get, orderByChild, equalTo, query, startAt, limitToFirst, limitToLast, endBefore } from "firebase/database";
-import { limit } from "firebase/firestore";
+import {
+  getDatabase,
+  ref,
+  child,
+  get,
+  orderByChild,
+  query,
+  limitToLast,
+  endAt,
+} from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -27,38 +35,53 @@ export const firebaseFetchContents = async (lang = "ru") => {
 
 export const firebaseFetchPostFeed = async (lang, page, per_page = 10) => {
   const dbRef = ref(database);
-  const totalPosts = await get(child(dbRef, `${lang}/post-count`)).then((snapshot) => snapshot.val());
+  const totalPosts = await get(child(dbRef, `${lang}/post-count`)).then(
+    (snapshot) => snapshot.val()
+  );
   const totalPages = Math.ceil(totalPosts / per_page);
   const postsRef = ref(database, `${lang}/posts`);
-  console.log(page, per_page)
 
   try {
-    // Fetch the posts for the current page
-    let postsQuery;
-    if (page === 1) {
-      postsQuery = query(
-        postsRef,
-        orderByChild("date"),
-        limitToLast(per_page)
-      );
-    } else {
+    let startDate = null;
 
-      postsQuery = query(
-        postsRef,
-        orderByChild("date"),
-        startAt((page - 1) * per_page),
-        limit(per_page)
+    if (page > 1) {
+      // Fetch the previous pages snapshot to determine the start date for the current page
+      const previousPageSnapshot = await get(
+        query(
+          postsRef,
+          orderByChild("date"),
+          limitToLast((page - 1) * per_page)
+        )
       );
+
+      const previousPagePosts = previousPageSnapshot.val() || {};
+      const sortedPreviousPagePosts = Object.values(previousPagePosts).sort(
+        (a, b) => new Date(b.date) - new Date(a.date)
+      );
+      if (sortedPreviousPagePosts.length > 0) {
+        startDate =
+          sortedPreviousPagePosts[sortedPreviousPagePosts.length - 1].date;
+      }
     }
 
-    // Execute the query
-    const querySnapshot = await get(postsQuery);
+    // Fetch the current page posts based on the start date
+    const currentPageQuery = startDate
+      ? query(
+          postsRef,
+          orderByChild("date"),
+          endAt(startDate),
+          limitToLast(per_page)
+        )
+      : query(postsRef, orderByChild("date"), limitToLast(per_page));
 
-    // Extract posts data
-    const posts = [];
-    querySnapshot.forEach((doc) => {
-      posts.unshift({ id: doc.key, ...doc.val() });
-    });
+    const currentPageSnapshot = await get(currentPageQuery);
+    const currentPagePosts = currentPageSnapshot.val() || {};
+    const posts = Object.entries(currentPagePosts)
+      .map(([id, data]) => ({
+        id,
+        ...data,
+      }))
+      .sort((a, b) => new Date(b.date) - new Date(a.date)); // Ensure the posts are sorted in reverse order
 
     return {
       totalPosts,
@@ -70,8 +93,6 @@ export const firebaseFetchPostFeed = async (lang, page, per_page = 10) => {
     throw error;
   }
 };
-
-
 
 export const firebaseFetchPost = async (tripId, lang = "ru") => {
   const dbRef = ref(database);
