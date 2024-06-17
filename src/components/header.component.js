@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./header.style.scss";
 import { Link } from "react-router-dom";
 import LanguageSwitcher from "./language-switcher.component.js";
-import { useLocation } from "react-router-dom";
 import useLanguage from "../redux/use-language.js";
 
 function Header() {
-  const location = useLocation();
   const { language } = useLanguage();
 
   const addLang = (s) => {

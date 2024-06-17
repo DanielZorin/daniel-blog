@@ -135,6 +135,8 @@ def load_trip(name, lang="ru"):
         else:
             result["preview"] = "<br/>".join(preview) + "<br/>" + "<img src=\"" + e["src"] + "\">"
             break
+    if not "preview" in result:
+        result["preview"] = "<br/>".join(preview)
     result["post_type"] = "trip"
     return result
     

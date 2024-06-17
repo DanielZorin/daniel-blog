@@ -57,7 +57,7 @@ export function Pagination({
             className="hover:bg-neutral-100 disabled:hover:bg-white focus-visible:ring focus-visible:ring-purple-410 focus:outline-none rounded-tl-[3px] rounded-bl-[3px]"
             disabled={currentPage === 1}
           >
-            <img src={ScrollLeft} />
+            <img src={ScrollLeft} alt="" />
           </button>
           <div>
             {pageNumbers.map((pageNumber, index) => (
@@ -81,7 +81,7 @@ export function Pagination({
             className="hover:bg-neutral-100 disabled:hover:bg-white focus-visible:ring focus-visible:ring-purple-410 focus-visible:outline-none rounded-tr-[3px] rounded-br-[3px]"
             disabled={currentPage === totalPages}
           >
-            <img src={ScrollRight} />
+            <img src={ScrollRight} alt="" />
           </button>
         </div>
       )}
