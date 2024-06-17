@@ -10,7 +10,7 @@ function Header() {
   const { language } = useLanguage();
 
   const addLang = (s) => {
-    return s + "?lang=" + language;
+    return "/" + language + s;
   };
 
   return (

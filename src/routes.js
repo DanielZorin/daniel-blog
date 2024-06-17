@@ -15,6 +15,7 @@ import Contacts from "./pages/contacts.component.js";
 import Plans from "./pages/plans.component.js";
 import { SearchBox } from "./components/search-box.js";
 import StartPage from "./pages/start.component.js";
+import FeedPage from "./pages/feed.component.js";
 
 const reload = () => window.location.reload();
 
@@ -49,7 +50,7 @@ const routes = createRoutesFromElements(
   <Route element={<Layout />}>
     <Route path="/sitemap.txt" onEnter={reload} />
     <Route path="/" element={<StartPage />} />
-    <Route path="/:lang" element={<ContentsPage />} />
+    <Route path="/:lang" element={<FeedPage />} />
     <Route path="/:lang/history" element={<ContentsPage />} />
     <Route path="/:lang/trip/:tripId" element={<TripPage />} />
     <Route exact path="/:lang/year/:year" element={<YearPage />} />

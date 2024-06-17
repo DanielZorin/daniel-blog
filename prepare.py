@@ -3,9 +3,92 @@ from bs4 import BeautifulSoup
 import firebase_admin
 from firebase_admin import credentials, db
 import pyuca
+import datetime
 
 
 links = {}
+
+def get_final_date(s):
+    months = {"января":1, "февраля":2, "марта":3, "апреля":4, "мая":5, "июня":6, "июля":7, "августа":8, "сентября":9, "октября":10, "ноября":11, "декабря":12}
+    month_length = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if not s or not s[0] in "0123456789":
+        return datetime.date(2000, 1, 1)
+    parts = s.split(" ")
+    days = []
+    start_date = None
+    year = -1
+    last_year = int(parts[-1])
+    for p in parts:
+        if p.strip() == "":
+            continue
+        if p.strip() == "-":
+            if len(days) == 1:
+                start_date = [days[0][0], month]
+                if year > 0:
+                    start_date.append(year)
+                days = days[:-1]
+                year = -1
+                continue
+            else:
+                start_date = [days[-1][0], month]
+                if year > 0:
+                    start_date.append(year)
+                days = days[:-1]
+                year = -1
+                continue
+        if p in months or p.replace(",", "") in months:
+            month = months[p.replace(",", "")]
+            for d in days:
+                if d[1] == -1:
+                    d[1] = month
+        else:
+            
+            try:
+                val = int(p.replace(",", " "))
+                if val < 1900:
+                    raise
+                year = val
+                for d in days:
+                    if d[2] == -1:
+                        d[2] = year
+            except:
+                # this is day
+                days_parts = p.split(",")
+                for p2 in days_parts:
+                    if p2.strip() == "":
+                        continue
+                    if "-" in p:
+                        day1 = int(p2.split("-")[0])
+                        day2 = int(p2.split("-")[1])
+                        days += [[x, -1, -1] for x in range(day1, day2+1)]
+                    else:
+                        days.append([int(p2), -1, -1])
+                        
+            if start_date:
+                end_date = [days[-1][0], month]
+                if days[-1][2] == -1:
+                    days = days[:-1]
+                #print(s, start_date, days, month, year)
+                if start_date[1] == 2:
+                    month_end = 28
+                    #if year % 4 == 0:
+                    #    month_end = 29
+                else:
+                    month_end = month_length[start_date[1] - 1]
+                days += [[x, start_date[1], -1] for x in range(start_date[0], month_end + 1)]
+                next_month = start_date[1] + 1
+                if next_month == 13:
+                    next_month = 1
+                days += [[x, next_month, -1] for x in range(1, end_date[0] + 1)]
+                start_date = None
+                #print(s, days, month, year)
+    for day in days[::-1]:
+        try:
+            return datetime.date(day[2], day[1], day[0])
+        except:
+            continue
+    return datetime.date(2000, 1, 1)
+    
 
 def load_trip(name, lang="ru"):
     fname = "backend-data/trip-" + lang + "/" + name
@@ -27,6 +110,7 @@ def load_trip(name, lang="ru"):
                 cur_section = result["title"]
         if tag.name == "i":
             result["dates"] = tag.string
+            #result["date"] = get_final_date(tag.string)
         if tag.name == "h2":
             cur_section = tag.string
             links[tag.string] = name.replace(".html", "")
@@ -44,6 +128,13 @@ def load_trip(name, lang="ru"):
         if tag.name == "p":
             p = "".join([str(s) for s in tag.contents]).strip()
             result["content"].append({"type": "text", "src": p})
+    preview = []
+    for e in result["content"]:
+        if e["type"] != "image":
+            preview.append(e["src"])
+        else:
+            result["preview"] = "<br/>".join(preview) + "<br/>" + "<img src=\"" + e["src"] + "\">"
+            break
     return result
     
 def get_preview(trip, trip_data, bookmark=""):
@@ -241,7 +332,7 @@ if __name__ == "__main__":
     ref.update({"ru/trips": {}})
     ref.update({"en/trips": {}})
     ref = db.reference("/ru/trips/")
-    print("Uploading to firebase ru")
+    '''print("Uploading to firebase ru")
     for trip in tqdm.tqdm(sorted(trips_ru.keys())):
         #print("ru ",  trip)
         ref.update({trip: trips_ru[trip]})
@@ -251,7 +342,47 @@ if __name__ == "__main__":
     print("Uploading to firebase en")
     for trip in tqdm.tqdm(sorted(trips_en.keys())):
         #print("en ",  trip)
-        ref.update({trip: trips_en[trip]})
+        ref.update({trip: trips_en[trip]})'''
     
+    posts = {}
+    for trip in trips_ru.keys():
+        posts["ru-" + trip] = trips_ru[trip]
+        posts["ru-" + trip]["id"] = trip
+        posts["ru-" + trip]["language"] = "ru"
+        posts["ru-" + trip]["date"] = get_final_date(trips_ru[trip]["dates"]).isoformat()
+    for trip in trips_en.keys():
+        posts["en-" + trip] = trips_en[trip]
+        posts["en-" + trip]["id"] = trip
+        posts["en-" + trip]["language"] = "en"
+        posts["en-" + trip]["date"] = posts["ru-" + trip]["date"]
+    f = open("backend-data/all_posts.json", "r", encoding="utf-8")
+    guides = json.loads(f.read())
+    for guide in guides.keys():
+        post = guides[guide]
+        post["id"] = post["name"]
+        post["date"] = datetime.datetime.strptime(post["date"], "%m/%d/%Y").date().isoformat()
+        f = open("backend-data/guides/" + guide + ".html", "r", encoding="utf-8")
+        post["content"] = f.read()
+        i = post["content"].find("<img")
+        i2 = post["content"][i+1:].find(">")
+        post["preview"] = post["content"][:i+i2+3]
+        posts[guide] = post
+ 
     
+    ref = db.reference("/posts/")
+    old_posts = ref.get()
+    if old_posts:
+        for key in old_posts.keys():
+            ref.child(key).delete()
+    #ref.delete()
+    ref = db.reference("/")
+    ref.child('posts').delete()
+    ref.update({"ru/posts": {}})
+    ref.update({"en/posts": {}})
+    ref.update({"ru/post-count": len(posts) / 2})
+    ref.update({"en/post-count": len(posts) / 2})
+    for post in tqdm.tqdm(sorted(posts.keys())):
+        key = posts[post]["language"] + "/posts/" + post
+        ref.update({key: posts[post]})
+        
     generate_sitemap("ru")
