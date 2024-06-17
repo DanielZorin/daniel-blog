@@ -260,7 +260,7 @@
     "ru-guide-cambodia": {
         "date": "01/04/2016",
         "name": "guide-cambodia",
-        "title": "Камбоджа- цена вопроса",
+        "title": "Камбоджа - цена вопроса",
         "language": "ru"
     },
     "ru-new-year-2015": {
@@ -308,19 +308,13 @@
     "ru-guide-china": {
         "date": "05/02/2015",
         "name": "guide-china",
-        "title": "Итоги апреля, Китай. Месяц безудержного наслаждения",
+        "title": "Китай - цена вопроса",
         "language": "ru"
     },
-    "ru-guide-china2": {
-        "date": "04/01/2015",
-        "name": "guide-china2",
-        "title": "Итоги марта, Китай",
-        "language": "ru"
-    },
-    "ru-guide-germany2": {
+    "ru-guide-poland": {
         "date": "02/19/2015",
-        "name": "guide-germany2",
-        "title": "Европа при 75 рублей за евро: цена вопроса",
+        "name": "poland",
+        "title": "Восточная Европа - цена вопроса",
         "language": "ru"
     },
     "ru-guide-mongolia": {
@@ -437,10 +431,10 @@
         "name": "new-year-2022",
         "language": "en"
     },
-    "en-guide-bahrain": {
+    "en-guide-saudi": {
         "date": "12/20/2022",
         "title": "Saudi Arabia travel guide",
-        "name": "guide-bahrain",
+        "name": "guide-saudi",
         "language": "en"
     },
     "en-guide-lebanon": {
@@ -455,10 +449,10 @@
         "name": "guide-iran",
         "language": "en"
     },
-    "en-guide-saint kitts and nevis": {
+    "en-guide-caribbean": {
         "date": "05/21/2022",
         "title": "Caribbean islands travel guide",
-        "name": "guide-saint kitts and nevis",
+        "name": "guide-caribbean",
         "language": "en"
     },
     "en-guide-turkey": {
@@ -473,10 +467,10 @@
         "name": "new-year-2021",
         "language": "en"
     },
-    "en-guide-honduras": {
+    "en-guide-panama": {
         "date": "11/16/2021",
         "title": "Central America travel guide",
-        "name": "guide-honduras",
+        "name": "guide-panama",
         "language": "en"
     },
     "en-guide-romania": {
@@ -509,10 +503,10 @@
         "name": "guide-usa",
         "language": "en"
     },
-    "en-guide-northern mariana islands": {
+    "en-guide-oceania": {
         "date": "02/09/2020",
         "title": "Oceania travel guide",
-        "name": "guide-northern mariana islands",
+        "name": "guide-oceania",
         "language": "en"
     },
     "en-new-year-2019": {
@@ -539,10 +533,10 @@
         "name": "guide-australia",
         "language": "en"
     },
-    "en-guide-new zealand": {
+    "en-guide-new-zealand": {
         "date": "04/13/2019",
         "title": "New Zealand travel guide",
-        "name": "guide-new zealand",
+        "name": "guide-new-zealand",
         "language": "en"
     },
     "en-guide-canada": {
@@ -565,20 +559,14 @@
     },
     "en-guide-japan": {
         "date": "12/19/2017",
-        "title": "Япония - страна, пробившая небеса",
+        "title": "Japan travel guide",
         "name": "guide-japan",
         "language": "en"
     },
     "en-guide-india": {
         "date": "08/11/2017",
-        "title": "Индия - страна безысходности и уныния. Часть II",
+        "title": "India travel guide",
         "name": "guide-india",
-        "language": "en"
-    },
-    "en-guide-india2": {
-        "date": "08/10/2017",
-        "title": "Индия - страна безысходности и уныния",
-        "name": "guide-india2",
         "language": "en"
     },
     "en-guide-nepal": {
@@ -607,26 +595,26 @@
     },
     "en-guide-gibraltar": {
         "date": "08/26/2016",
-        "title": "Западная Европа: цена вопроса",
+        "title": "Western Europe travel guide",
         "name": "guide-gibraltar",
         "language": "en"
     },
-    "en-guide-sri lanka": {
+    "en-guide-sri-lanka": {
         "date": "07/19/2016",
         "title": "Sri Lanka & Maldives travel guide",
-        "name": "guide-sri lanka",
+        "name": "guide-sri-lanka",
         "language": "en"
     },
     "en-guide-indonesia": {
         "date": "06/18/2016",
-        "title": "Индонезия - страна больших контрастов",
+        "title": "Indonesia travel guide",
         "name": "guide-indonesia",
         "language": "en"
     },
-    "en-guide-east timor": {
+    "en-guide-east-timor": {
         "date": "05/19/2016",
         "title": "East Timor travel guide",
-        "name": "guide-east timor",
+        "name": "guide-east-timor",
         "language": "en"
     },
     "en-guide-singapore": {
@@ -637,7 +625,7 @@
     },
     "en-guide-malaysia": {
         "date": "04/19/2016",
-        "title": "Малайзия - лучшая страна Азии",
+        "title": "Malaysia travel guide",
         "name": "guide-malaysia",
         "language": "en"
     },
@@ -667,7 +655,7 @@
     },
     "en-guide-thailand": {
         "date": "10/29/2015",
-        "title": "Таиланд: цена вопроса",
+        "title": "Thailand travel guide",
         "name": "guide-thailand",
         "language": "en"
     },
@@ -677,10 +665,10 @@
         "name": "guide-vietnam",
         "language": "en"
     },
-    "en-guide-hong kong": {
+    "en-guide-hong-kong": {
         "date": "08/11/2015",
         "title": "Hong Kong travel guide",
-        "name": "guide-hong kong",
+        "name": "guide-hong-kong",
         "language": "en"
     },
     "en-guide-taiwan": {
@@ -695,34 +683,28 @@
         "name": "guide-philippines",
         "language": "en"
     },
-    "en-guide-south korea": {
+    "en-guide-south-korea": {
         "date": "06/20/2015",
         "title": "South Korea travel guide",
-        "name": "guide-south korea",
+        "name": "guide-south-korea",
         "language": "en"
     },
     "en-guide-china": {
         "date": "05/02/2015",
-        "title": "Итоги апреля, Китай. Месяц безудержного наслаждения",
+        "title": "China travel guide",
         "name": "guide-china",
-        "language": "en"
-    },
-    "en-guide-china2": {
-        "date": "04/01/2015",
-        "title": "Итоги марта, Китай",
-        "name": "guide-china2",
         "language": "en"
     },
     "en-guide-poland": {
         "date": "02/19/2015",
-        "title": "Европа при 75 рублей за евро: цена вопроса",
+        "title": "Eastern Europe travel guide",
         "name": "guide-poland",
         "language": "en"
     },
-    "en-guide-russia": {
+    "en-guide-mongolia": {
         "date": "01/15/2015",
         "title": "Mongolia & Siberia travel guide",
-        "name": "guide-russia",
+        "name": "guide-mongolia",
         "language": "en"
     },
     "en-new-year-2014": {
@@ -761,10 +743,10 @@
         "name": "guide-hungary",
         "language": "en"
     },
-    "en-guide-south africa": {
+    "en-guide-south-africa": {
         "date": "05/10/2024",
         "title": "South Africa travel guide",
-        "name": "guide-south africa",
+        "name": "guide-south-africa",
         "language": "en"
     },
     "en-guide-denmark": {
@@ -779,10 +761,10 @@
         "name": "guide-spain",
         "language": "en"
     },
-    "en-guide-mozambique": {
+    "en-guide-zimbabwe": {
         "date": "05/13/2024",
         "title": "Zimbabwe, Zambia, Botswana, Mozambique, Eswatini travel guide",
-        "name": "guide-mozambique",
+        "name": "guide-zimbabwe",
         "language": "en"
     },
     "ru-guide-france": {
