@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { LoadingContainer } from "../components/loading-container.js";
 import { firebaseFetchPostFeed } from "../redux/firebase.js";
-import "./contents.style.scss";
 import useLanguage from "../redux/use-language.js";
 import Pagination from "../components/pagination.js";
 

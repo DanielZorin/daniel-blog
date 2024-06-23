@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { LoadingContainer } from "../components/loading-container.js";
 import { firebaseFetchContents } from "../redux/firebase.js";
-import "./contents.style.scss";
 import useLanguage from "../redux/use-language.js";
 
 const ContentsPage = () => {
@@ -25,21 +24,21 @@ const ContentsPage = () => {
 
   return years.map((year, j) => (
     <div key={j} className="pl-[50px]">
-      <div>
-        <Link className="yearLink" to={`/${language}/year/${year.toString()}`}>
+      <div className="py-1">
+        <Link className="text-2xl font-bold text-black hover:text-red-500" to={`/${language}/year/${year.toString()}`}>
           {year}
         </Link>
       </div>
       {data
         .filter((entry) => entry.year === year)
         .map((entry, i) => (
-          <div key={i}>
+          <div key={i} className="py-1">
             {entry.link ? (
-              <Link className="tripLink" to={`/${language}/${entry.link}`}>
+              <Link className="text-black hover:text-red-500" to={`/${language}/${entry.link}`}>
                 {entry.name}
               </Link>
             ) : (
-              <span className="tripLinkFuture">{entry.name}</span>
+              <span className="text-gray-600">{entry.name}</span>
             )}
           </div>
         ))}

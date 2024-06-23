@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom';
-import './contents.style.scss'
 
 const SearchPage = () => {
     let { query } = useParams();

@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import "./contents.style.scss";
 import useLanguage from "../redux/use-language.js";
 import { useQuery } from "@tanstack/react-query";
 import { LoadingContainer } from "../components/loading-container.js";
@@ -28,14 +27,15 @@ const TripPage = () => {
   } else {
     return (
       <div>
-        <h1>{data.title}</h1>
-        <i>{data.dates}</i>
+        <h1 className="text-3xl font-bold">{data.title}</h1>
+        <div className="italic py-2">{data.dates}</div>
         {data.content.map((e, i) => {
           switch (e.type) {
             case "text":
               return (
                 <p
                   key={`text-${i}`}
+                  className="py-1"
                   dangerouslySetInnerHTML={{ __html: e.src }}
                 ></p>
               );
@@ -52,7 +52,7 @@ const TripPage = () => {
               return (
                 <>
                   <a name={e.bookmark} id={e.bookmark}></a>
-                  <h2 key={i}>{e.src}</h2>
+                  <h2 key={i} className="text-2xl font-bold">{e.src}</h2>
                 </>
               );
             case "separator":
