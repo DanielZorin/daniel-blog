@@ -13,11 +13,10 @@ const GuidesPage = () => {
   });
 
   if (isLoading || isFetching) return <LoadingContainer />;
+
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: data }}>
-        
-      </div>
+      <div dangerouslySetInnerHTML={{ __html: data }}></div>
     </>
   );
 };

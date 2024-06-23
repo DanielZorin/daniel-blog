@@ -281,6 +281,17 @@ def prepare_all(lang = "ru"):
     }
 
 if __name__ == "__main__":
+    cred = credentials.Certificate("google-key.json")
+    firebase_admin.initialize_app(cred, {'databaseURL': 'https://homepage-d40ae.firebaseio.com/'})
+
+    ref = db.reference("/")
+    for page in ["guides"]:
+        for language in ["en", "ru"]:
+            ref = db.reference("/" + language + "/")
+            f = open("backend-data/pages/" + page + "-" + language + ".html", "r", encoding="utf-8")
+            txt = f.read()
+            ref.update({page: txt})    
+
     data  = prepare_all("ru")
         
     db_all = {}
@@ -288,15 +299,10 @@ if __name__ == "__main__":
     
     data  = prepare_all("en")
     db_all["en"] = dict(data)
-    
-    cred = credentials.Certificate("google-key.json")
-    firebase_admin.initialize_app(cred, {'databaseURL': 'https://homepage-d40ae.firebaseio.com/'})
 
-    ref = db.reference("/")
-
-    f = open("db.json", "w")
-    f.write(json.dumps(db_all, indent=4))
-    f.close()
+    #f = open("db.json", "w")
+    #f.write(json.dumps(db_all, indent=4))
+    #f.close()
 
     data = db_all
     data_ru = data["ru"]
@@ -331,12 +337,6 @@ if __name__ == "__main__":
     for k in data_en:
         ref.update({k: data_en[k]})
     ref.update({"plans": plans})
-    
-    for page in ["guides"]:
-        for language in ["en", "ru"]:
-            ref = db.reference("/" + language + "/")
-            f = open("backend-data/pages/" + page + "-" + language + ".html", "r")
-            ref.update({page, f.read()})
     
     ref.update({"ru/trips": {}})
     ref.update({"en/trips": {}})

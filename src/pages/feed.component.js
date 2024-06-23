@@ -32,12 +32,12 @@ const FeedPage = () => {
       {data.posts.map((post, j) => (
         <div key={j} className="border-[2px] p-3 flex flex-col">
           <div className="text-[20px]">
-            <Link to={`${language}/post/${post.id}`}>{post.title}</Link>
+            <Link to={`/${language}/post/${post.id}`}>{post.title}</Link>
           </div>
           <div className="text-[12px]">{post.date}</div>
           <div dangerouslySetInnerHTML={{ __html: post.preview }}></div>
           <div>
-            <Link to={`${language}/post/${post.id}`}>
+            <Link to={`/${language}/post/${post.id}`}>
               {language === "en" ? "Read more..." : "Читать дальше..."}
             </Link>
           </div>
