@@ -1,5 +1,5 @@
 import React from "react";
-import { firebaseFetchPlans } from "../redux/firebase";
+import { firebaseFetchPage } from "../redux/firebase";
 import { useQuery } from "@tanstack/react-query";
 import useLanguage from "../redux/use-language";
 import { LoadingContainer } from "../components/loading-container";
@@ -8,7 +8,7 @@ const Plans = () => {
   const { language } = useLanguage();
   const { data, isLoading, isFetching } = useQuery({
     queryKey: ["plans", language],
-    queryFn: () => firebaseFetchPlans(language),
+    queryFn: () => firebaseFetchPage("plans", language),
     staleTime: Infinity,
   });
 

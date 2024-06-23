@@ -1,18 +1,10 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react'
 import { Link, useParams } from 'react-router-dom';
-import { fetchSearchResults } from '../redux/actions';
-import { selectSearchResults } from '../redux/selectors';
 import './contents.style.scss'
 
 const SearchPage = () => {
     let { query } = useParams();
-    let data = useSelector(selectSearchResults);
-    const dispatch = useDispatch();
-    useEffect(() => dispatch(fetchSearchResults(query)), [query]);
-
-    console.log(data)
-
+    const data = [query]
     const shorten = (s) => {
         if (s.length < 300)
             return s;

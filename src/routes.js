@@ -55,11 +55,11 @@ const routes = createRoutesFromElements(
     <Route path="/:lang/trip/:tripId" element={<TripPage />} />
     <Route path="/:lang/post/:tripId" element={<TripPage />} />
     <Route exact path="/:lang/year/:year" element={<YearPage />} />
-    <Route exact path="/:lang/country/:countryId" element={CountryPage} />
-    <Route exact path="/:lang/cities/:countryId" element={CitiesPage} />
+    <Route exact path="/:lang/country/:countryId" element={<CountryPage/>} />
+    <Route exact path="/:lang/cities/:countryId" element={<CitiesPage/>} />
     <Route exact path="/:lang/stats" element={<StatsPage />} />
     <Route exact path="/:lang/list" element={<CountryListPage />} />
-    <Route exact path="/:lang/search/:query" element={SearchPage} />
+    <Route exact path="/:lang/search/:query" element={<SearchPage/>} />
   </Route>
 );
 
