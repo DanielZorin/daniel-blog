@@ -1,0 +1,16 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "en": {
+      "posts": {
+        ".indexOn": ["date"]
+      }
+    },
+    "ru": {
+      "posts": {
+        ".indexOn": ["date"]
+      }
+    }
+  }
+}

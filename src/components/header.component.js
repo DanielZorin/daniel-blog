@@ -14,28 +14,28 @@ function Header() {
   return (
     <>
       <LanguageSwitcher />
-      <nav className="border-b-[2px] flex w-full">
-        <div className="w-1/5 flex items-center justify-center border-[2px]">
+      <nav className="border-b-[2px] flex flex-col md:flex-row w-full">
+        <div className="flex items-center justify-center border-[2px] w-full md:w-1/5">
           <Link className="menuLink" to={addLang("/")}>
             {language === "ru" ? "Главная" : "Home"}
           </Link>
         </div>
-        <div className="w-1/5 flex items-center justify-center border-[2px]">
+        <div className="flex items-center justify-center border-[2px] w-full md:w-1/5">
           <Link className="menuLink" to={addLang("/history")}>
             {language === "ru" ? "Хронология" : "History"}
           </Link>
         </div>
-        <div className="w-1/5 flex items-center justify-center border-[2px]">
+        <div className="flex items-center justify-center border-[2px] w-full md:w-1/5">
           <Link className="menuLink" to={addLang("/list")}>
             {language === "ru" ? "Страны" : "Countries"}
           </Link>
         </div>
-        <div className="w-1/5 flex items-center justify-center border-[2px]">
+        <div className="flex items-center justify-center border-[2px] w-full md:w-1/5">
           <Link className="menuLink" to={addLang("/guides")}>
             {language === "ru" ? "Обзоры" : "Guides"}
           </Link>
         </div>
-        <div className="w-1/5 flex items-center justify-center border-[2px]">
+        <div className="flex items-center justify-center border-[2px] w-full md:w-1/5">
           <Link className="menuLink" to={addLang("/stats")}>
             {language === "ru" ? "Статистика" : "Stats"}
           </Link>

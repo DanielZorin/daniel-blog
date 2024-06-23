@@ -17,28 +17,65 @@ import { SearchBox } from "./components/search-box.js";
 import StartPage from "./pages/start.component.js";
 import FeedPage from "./pages/feed.component.js";
 import GuidesPage from "./pages/guides.component.js";
+import { useEffect, useState } from "react";
 
 const reload = () => window.location.reload();
 
 function Layout() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Function to check if the viewport width is less than 768px (typical mobile breakpoint)
+  const checkIsMobile = () => {
+    const viewportWidth = window.innerWidth;
+    if (viewportWidth < 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
+
   return (
     <div className="App">
       <Header />
-      <div className="flex flex-row w-full">
-        <div className="w-4/5 flex flex-col pl-12 pr-6 pt-6">
+      <div className="flex flex-col md:flex-row w-full">
+        <div className="md:w-4/5 flex flex-col pl-6 pr-6 pt-6">
           <Outlet />
         </div>
-        <div className="flex flex-col items-start w-1/5 border-l-[2px] min-h-screen">
-          <div className="border-b-[2px] w-full p-4">
-            <SearchBox />
+        {isMobile ? (
+          // Display below main content on mobile
+          <div className="md:hidden flex flex-col items-start w-full border-t-[2px] min-h-screen mt-4">
+            <div className="border-b-[2px] w-full p-4">
+              <SearchBox />
+            </div>
+            <div className="border-b-[2px] w-full p-4">
+              <Contacts />
+            </div>
+            <div className="border-b-[2px] w-full p-4">
+              <Plans />
+            </div>
           </div>
-          <div className="border-b-[2px] w-full p-4">
-            <Contacts />
+        ) : (
+          // Display on the right for larger screens
+          <div className="hidden md:flex flex-col items-start w-1/5 border-l-[2px] min-h-screen mt-4">
+            <div className="border-b-[2px] w-full p-4">
+              <SearchBox />
+            </div>
+            <div className="border-b-[2px] w-full p-4">
+              <Contacts />
+            </div>
+            <div className="border-b-[2px] w-full p-4">
+              <Plans />
+            </div>
           </div>
-          <div className="border-b-[2px] w-full p-4">
-            <Plans />
-          </div>
-        </div>
+        )}
       </div>
       <Helmet>
         <title>Daniel A. Zorin</title>
