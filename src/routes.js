@@ -16,6 +16,7 @@ import Plans from "./pages/plans.component.js";
 import { SearchBox } from "./components/search-box.js";
 import StartPage from "./pages/start.component.js";
 import FeedPage from "./pages/feed.component.js";
+import GuidesPage from "./pages/guides.component.js";
 
 const reload = () => window.location.reload();
 
@@ -58,6 +59,7 @@ const routes = createRoutesFromElements(
     <Route exact path="/:lang/country/:countryId" element={<CountryPage/>} />
     <Route exact path="/:lang/cities/:countryId" element={<CitiesPage/>} />
     <Route exact path="/:lang/stats" element={<StatsPage />} />
+    <Route exact path="/:lang/guides" element={<GuidesPage />} />
     <Route exact path="/:lang/list" element={<CountryListPage />} />
     <Route exact path="/:lang/search/:query" element={<SearchPage/>} />
   </Route>

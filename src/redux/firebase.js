@@ -101,12 +101,6 @@ export const firebaseFetchPost = async (tripId, lang = "ru") => {
   return get(child(dbRef, path)).then((snapshot) => snapshot.val());
 };
 
-export const firebaseFetchCities = async (lang = "ru") => {
-  const dbRef = ref(database);
-  const path = `${lang}/cities`;
-  return get(child(dbRef, path)).then((snapshot) => snapshot.val());
-};
-
 export const firebaseFetchPage = async (page, lang = "ru") => {
   const dbRef = ref(database);
   const path = `${lang}/${page}`;

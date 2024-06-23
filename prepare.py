@@ -332,6 +332,12 @@ if __name__ == "__main__":
         ref.update({k: data_en[k]})
     ref.update({"plans": plans})
     
+    for page in ["guides"]:
+        for language in ["en", "ru"]:
+            ref = db.reference("/" + language + "/")
+            f = open("backend-data/pages/" + page + "-" + language + ".html", "r")
+            ref.update({page, f.read()})
+    
     ref.update({"ru/trips": {}})
     ref.update({"en/trips": {}})
     ref = db.reference("/ru/trips/")
