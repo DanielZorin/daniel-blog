@@ -13,6 +13,7 @@ const Plans = () => {
   });
 
   if (isLoading || isFetching) return <LoadingContainer />;
+  if (!data) return <></>;
   return (
     <>
       <div>

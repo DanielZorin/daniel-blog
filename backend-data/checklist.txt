@@ -1,10 +1,77 @@
-guide China
-guide Switzerland
-guide Bulgaria
-guide Greece
-guide Baltics
-guide Poland
-guide Czechia
-guide Turkey
+Tbilisi
+Tbilisi-Elia
+Tbilisi-Dighomi
+Tbilisi-Ortachala
+Mtskheta
+Tsalka
+Hargeisa
+Somaliland road
+Berbera
+Jijiga
+Harar
+Dire Dawa
+Ethiopia train
+Adama
+Addis Ababa
+Bujumbura
+Gitega
+Muyinga
+Ngara
+Rwanda road
+Kigali
+Mbarara
+Kampala
+Jinja
+Kisumu
+Nakuru
+Lake Nakuru
+Nairobi
+Kenya train
+Mombasa
+Mombasa-2
+Voi
+Arusha
+Zanzibar
+Zanzibar-2
+Zanzibar-3
+Dar es Salaam
+Douala
+Douala-food
+Limbe
+Yaounde
+Cameroon train
+Dakar
+Dakar-2
+Mbour
+Bandia
+Serekunda
+Banjul
+Praia
+Cidade Velha
+Lisboa
+Santarem
+Porto
+guide Portugal
+Verona
+Olbia
+Oristano
+Cagliari
+Palermo
+Cefalu
+Messina
+Reggio Calabria
+Catania
+Siracusa
+Tirana
+guide Albania
 ==========================
+guide China
+guide Turkey
+guide Ethiopia
+guide Uganda
+guide Kenya
+guide Tanzania
+guide Cameroon
+guide Senegal
+Dubai
 Antalya
