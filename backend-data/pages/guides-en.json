@@ -1,0 +1,111 @@
+{
+  "regions": [
+    {
+      "name": "Europe",
+      "image": "https://live.staticflickr.com/65535/53038359953_127895e53b_o.jpg",
+      "countries": [
+        {"name": "Austria", "link": "post/guide-austria"},
+        {"name": "BeNeLux", "link": "post/guide-benelux"},
+        {"name": "Denmark", "link": "post/guide-denmark"},
+        {"name": "France", "link": "post/guide-france"},
+        {"name": "Germany", "link": "post/guide-germany"},
+        {"name": "Hungary", "link": "post/guide-hungary"},
+        {"name": "Ireland", "link": "post/guide-ireland"},
+        {"name": "Italy", "link": "post/guide-italy"},
+        {"name": "Romania", "link": "post/guide-romania"},
+        {"name": "Spain", "link": "post/guide-spain"},
+        {"name": "United Kingdom", "link": "post/guide-uk"}
+      ]
+    },
+    {
+      "name": "Middle East",
+      "image": "https://live.staticflickr.com/65535/53324220637_c19c7bd2d9_o.jpg",
+      "countries": [
+        {"name": "Armenia", "link": "post/guide-armenia"},
+        {"name": "Georgia", "link": "post/guide-georgia"},
+        {"name": "Iran", "link": "post/guide-iran"},
+        {"name": "Iraq", "link": "post/guide-iraq"},
+        {"name": "Lebanon", "link": "post/guide-lebanon"},
+        {"name": "Pakistan", "link": "post/guide-pakistan"},
+        {"name": "Saudi Arabia", "link": "post/guide-saudi"},
+        {"name": "Turkey", "link": "post/guide-turkey"},
+        {"name": "UAE and Oman", "link": "post/guide-uae"}
+      ]
+    },
+    {
+      "name": "Asia",
+      "image": "https://live.staticflickr.com/65535/52911511286_7a228761db_o.jpg",
+      "countries": [
+        {"name": "Bangladesh", "link": "post/guide-bangladesh"},
+		{"name": "Cambodia", "link": "post/guide-cambodia"},
+        {"name": "China", "link": "post/guide-china"},
+        {"name": "East Timor", "link": "post/guide-east-timor"},
+        {"name": "Hong Kong", "link": "post/guide-hong-kong"},
+        {"name": "India", "link": "post/guide-india"},
+        {"name": "Indonesia", "link": "post/guide-indonesia"},
+		{"name": "Japan", "link": "post/guide-japan"},
+        {"name": "Laos", "link": "post/guide-laos"},
+        {"name": "Malaysia", "link": "post/guide-malaysia"},
+        {"name": "Mongolia", "link": "post/guide-mongolia"},
+        {"name": "Myanmar", "link": "post/guide-myanmar"},
+        {"name": "Nepal", "link": "post/guide-nepal"},
+        {"name": "Singapore", "link": "post/guide-singapore"},
+        {"name": "Taiwan", "link": "post/guide-taiwan"},
+        {"name": "Thailand", "link": "post/guide-thailand"},
+        {"name": "Philippines", "link": "post/guide-philippines"},
+        {"name": "Sri Lanka and Maldives", "link": "post/guide-sri-lanka"},
+        {"name": "South Korea", "link": "post/guide-south-korea"},
+		{"name": "Vietnam", "link": "post/guide-vietnam"}
+      ]
+    },
+    {
+      "name": "Africa",
+      "image": "https://live.staticflickr.com/65535/53536122557_b63da1ca87_o.jpg",
+      "countries": [
+		{"name": "Cameroon", "link": "post/guide-cameroon"},
+		{"name": "Ethiopia and Somalia", "link": "post/guide-ethiopia"},
+		{"name": "Kenya", "link": "post/guide-kenya"},
+		{"name": "Senegal, Gambia, Cabo Verde", "link": "post/guide-senegal"},
+		{"name": "South Africa", "link": "post/guide-south-africa"},
+        {"name": "Tanzania", "link": "post/guide-tanzania"},
+		{"name": "Uganda, Rwanda, Burundi", "link": "post/guide-uganda"},
+        {"name": "Zimbabwe, Zambia, Botswana, Mozambique, Eswatini", "link": "post/guide-zimbabwe"}
+      ]
+    },
+    {
+	  "name": "Americas",
+	  "image": "https://live.staticflickr.com/65535/51257441144_56ca83cc2b_o.jpg",
+	  "countries": [
+		{"name": "United States", "link": "post/guide-usa"},
+		{"name": "Canada", "link": "post/guide-canada"},
+		{"name": "Mexico", "link": "post/guide-mexico"},
+		{"name": "Dominican Republic", "link": "post/guide-dominicana"},
+		{"name": "Brazil", "link": "post/guide-brazil"},
+		{"name": "Bolivia", "link": "post/guide-bolivia"},
+		{
+		  "name": "Central America",
+		  "link": "post/guide-panama",
+		  "additional_info": "Belize, Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica, Panama"
+		},
+		{
+		  "name": "Caribbean Islands",
+		  "link": "post/guide-caribbean",
+		  "additional_info": "Saint Kitts and Nevis, Antigua and Barbuda, Dominica, Saint Lucia, Barbados, Saint Vincent and the Grenadines, Grenada, Trinidad and Tobago, Bahamas, Jamaica, Haiti, Guadeloupe, Martinique, Sint Maarten, Saint Martin, US Virgin Islands, Puerto Rico, Curacao"
+		}
+	  ]
+	},
+	{
+	  "name": "Oceania",
+	  "image": "https://live.staticflickr.com/65535/51256835333_34688c21c0_o.jpg",
+	  "countries": [
+		{"name": "Australia", "link": "post/guide-australia"},
+		{"name": "New Zealand", "link": "post/guide-new-zealand"},
+		{
+		  "name": "Oceania",
+		  "link": "post/guide-oceania",
+		  "additional_info": "Fiji, Tonga, Samoa, Vanuatu, New Caledonia, Cook Islands, French Polynesia, Guam, Northern Mariana Islands"
+		}
+	  ]
+	}
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "regions": [
+    {
+      "name": "Europe",
+      "image": "https://live.staticflickr.com/65535/53038359953_127895e53b_o.jpg",
+      "countries": [
+        {"name": "Австрия", "link": "post/guide-austria"},
+        {"name": "БеНеЛюкс", "link": "post/guide-benelux"},
+        {"name": "Великобритания", "link": "post/guide-uk"},
+        {"name": "Венгрия", "link": "post/guide-hungary"},
+        {"name": "Германия", "link": "post/guide-germany"},
+        {"name": "Дания", "link": "post/guide-denmark"},
+        {"name": "Ирландия", "link": "post/guide-ireland"},
+        {"name": "Испания", "link": "post/guide-spain"},
+        {"name": "Италия", "link": "post/guide-italy"},
+        {"name": "Румыния", "link": "post/guide-romania"},
+        {"name": "Франция", "link": "post/guide-france"}
+      ]
+    },
+    {
+      "name": "Middle East",
+      "image": "https://live.staticflickr.com/65535/53324220637_c19c7bd2d9_o.jpg",
+      "countries": [
+        {"name": "Армения", "link": "post/guide-armenia"},
+        {"name": "Грузия", "link": "post/guide-georgia"},
+        {"name": "Иран", "link": "post/guide-iran"},
+        {"name": "Ирак", "link": "post/guide-iraq"},
+        {"name": "Ливан", "link": "post/guide-lebanon"},
+        {"name": "Пакистан", "link": "post/guide-pakistan"},
+        {"name": "Саудовская Аравия", "link": "post/guide-saudi"},
+        {"name": "Турция", "link": "post/guide-turkey"},
+        {"name": "ОАЭ и Оман", "link": "post/guide-uae"}
+      ]
+    },
+    {
+      "name": "Asia",
+      "image": "https://live.staticflickr.com/65535/52911511286_7a228761db_o.jpg",
+      "countries": [
+        {"name": "Бангладеш", "link": "post/guide-bangladesh"},
+        {"name": "Восточный Тимор", "link": "post/guide-east-timor"},
+        {"name": "Вьетнам", "link": "post/guide-vietnam"},
+        {"name": "Гонконг", "link": "post/guide-hong-kong"},
+        {"name": "Индия", "link": "post/guide-india"},
+        {"name": "Индонезия", "link": "post/guide-indonesia"},
+        {"name": "Камбоджа", "link": "post/guide-cambodia"},
+        {"name": "Китай", "link": "post/guide-china"},
+        {"name": "Лаос", "link": "post/guide-laos"},
+        {"name": "Малайзия", "link": "post/guide-malaysia"},
+        {"name": "Монголия", "link": "post/guide-mongolia"},
+        {"name": "Мьянма", "link": "post/guide-myanmar"},
+        {"name": "Непал", "link": "post/guide-nepal"},
+        {"name": "Сингапур", "link": "post/guide-singapore"},
+        {"name": "Южная Корея", "link": "post/guide-south-korea"},
+        {"name": "Тайвань", "link": "post/guide-taiwan"},
+        {"name": "Таиланд", "link": "post/guide-thailand"},
+        {"name": "Филиппины", "link": "post/guide-philippines"},
+        {"name": "Шри-Ланка и Мальдивы", "link": "post/guide-sri-lanka"},
+        {"name": "Япония", "link": "post/guide-japan"}
+      ]
+    },
+    {
+      "name": "Africa",
+      "image": "https://live.staticflickr.com/65535/53536122557_b63da1ca87_o.jpg",
+      "countries": [
+        {"name": "Камерун", "link": "post/guide-cameroon"},
+        {"name": "Кения", "link": "post/guide-kenya"},
+        {"name": "Сенегал, Гамбия, Кабо-Верде", "link": "post/guide-senegal"},
+        {"name": "Эфиопия и Сомали", "link": "post/guide-ethiopia"},
+        {"name": "Южная Африка", "link": "post/guide-south-africa"},
+        {"name": "Танзания", "link": "post/guide-tanzania"},
+        {"name": "Уганда, Руанда, Бурунди", "link": "post/guide-uganda"},
+        {"name": "Зимбабве, Замбия, Ботсвана, Мозамбик, Эсватини", "link": "post/guide-zimbabwe"}
+      ]
+    },
+    {
+      "name": "Americas",
+      "image": "https://live.staticflickr.com/65535/51257441144_56ca83cc2b_o.jpg",
+      "countries": [
+        {"name": "Боливия", "link": "post/guide-bolivia"},
+        {"name": "Бразилия", "link": "post/guide-brazil"},
+        {"name": "Канада", "link": "post/guide-canada"},
+        {"name": "Доминиканская Республика", "link": "post/guide-dominicana"},
+        {"name": "Мексика", "link": "post/guide-mexico"},
+        {"name": "Соединённые Штаты", "link": "post/guide-usa"},
+        {
+          "name": "Центральная Америка",
+          "link": "post/guide-panama",
+          "additional_info": "Белиз, Гватемала, Сальвадор, Гондурас, Никарагуа, Коста-Рика, Панама"
+        },
+        {
+          "name": "Карибские острова",
+          "link": "post/guide-caribbean",
+          "additional_info": "Сент-Китс и Невис, Антигуа и Барбуда, Доминика, Сент-Люсия, Барбадос, Сент-Винсент и Гренадины, Гренада, Тринидад и Тобаго, Багамы, Ямайка, Гаити, Гваделупа, Мартиника, Синт-Мартен, Сен-Мартен, Американские Виргинские острова, Пуэрто-Рико, Кюрасао"
+        }
+      ]
+    },
+    {
+      "name": "Oceania",
+      "image": "https://live.staticflickr.com/65535/51256835333_34688c21c0_o.jpg",
+      "countries": [
+        {"name": "Австралия", "link": "post/guide-australia"},
+        {"name": "Новая Зеландия", "link": "post/guide-new-zealand"},
+        {
+          "name": "Океания",
+          "link": "post/guide-oceania",
+          "additional_info": "Фиджи, Тонга, Самоа, Вануату, Новая Каледония, Острова Кука, Французская Полинезия, Гуам, Северные Марианские острова"
+        }
+      ]
+    }
+  ]
+}

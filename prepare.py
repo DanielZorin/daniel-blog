@@ -288,8 +288,8 @@ if __name__ == "__main__":
     for page in ["guides"]:
         for language in ["en", "ru"]:
             ref = db.reference("/" + language + "/")
-            f = open("backend-data/pages/" + page + "-" + language + ".html", "r", encoding="utf-8")
-            txt = f.read()
+            f = open("backend-data/pages/" + page + "-" + language + ".json", "r", encoding="utf-8")
+            txt = json.loads(f.read())
             ref.update({page: txt})    
 
     data  = prepare_all("ru")

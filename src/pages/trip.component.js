@@ -20,8 +20,8 @@ const TripPage = () => {
   if (data.post_type !== "trip") {
     return (
       <div>
-        <h1>{data.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: data.content }}></div>
+        <h1 className="text-3xl font-bold">{data.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: data.content.replace(/\n/g, "<br/>") }}></div>
       </div>
     );
   } else {

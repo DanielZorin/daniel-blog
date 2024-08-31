@@ -773,22 +773,94 @@
         "name": "guide-france",
         "language": "ru"
     },
+	"en-guide-france": {
+        "date": "04/10/2024",
+        "title": "France travel guide",
+        "name": "guide-france",
+        "language": "en"
+    },
     "ru-guide-benelux": {
         "date": "04/11/2024",
         "title": "Бельгия, Нидерланды, Люксембург - цена вопроса",
         "name": "guide-benelux",
         "language": "ru"
     },
-    "en-guide-france": {
-        "date": "04/10/2024",
-        "title": "France travel guide",
-        "name": "guide-france",
-        "language": "en"
-    },
     "en-guide-benelux": {
         "date": "04/11/2024",
         "title": "Belgium, Netherlands, Luxembourg travel guide",
         "name": "guide-benelux",
+        "language": "en"
+    },
+	"ru-guide-ethiopia": {
+        "date": "07/16/2024",
+        "title": "Эфиопия и Сомали - цена вопроса",
+        "name": "guide-ethiopia",
+        "language": "ru"
+    },
+	"en-guide-ethiopia": {
+        "date": "07/16/2024",
+        "title": "Ethiopia and Somalia travel guide",
+        "name": "guide-ethiopia",
+        "language": "en"
+    },
+	"ru-guide-uganda": {
+        "date": "07/20/2024",
+        "title": "Уганда, Руанда, Бурунди - цена вопроса",
+        "name": "guide-uganda",
+        "language": "ru"
+    },
+	"en-guide-uganda": {
+        "date": "07/20/2024",
+        "title": "Uganda, Rwanda, Burundi travel guide",
+        "name": "guide-uganda",
+        "language": "en"
+    },
+	"ru-guide-kenya": {
+        "date": "07/25/2024",
+        "title": "Кения - цена вопроса",
+        "name": "guide-kenya",
+        "language": "ru"
+    },
+	"en-guide-kenya": {
+        "date": "07/25/2024",
+        "title": "Kenya travel guide",
+        "name": "guide-kenya",
+        "language": "en"
+    },
+	"ru-guide-tanzania": {
+        "date": "07/31/2024",
+        "title": "Танзания - цена вопроса",
+        "name": "guide-tanzania",
+        "language": "ru"
+    },
+	"en-guide-tanzania": {
+        "date": "07/31/2024",
+        "title": "Tanzania travel guide",
+        "name": "guide-tanzania",
+        "language": "en"
+    },
+	"ru-guide-cameroon": {
+        "date": "08/03/2024",
+        "title": "Камерун - цена вопроса",
+        "name": "guide-cameroon",
+        "language": "ru"
+    },
+	"en-guide-cameroon": {
+        "date": "08/03/2024",
+        "title": "Cameroon travel guide",
+        "name": "guide-cameroon",
+        "language": "en"
+    },
+	"ru-guide-senegal": {
+        "date": "08/10/2024",
+        "title": "Сенегал, Гамбия, Кабо-Верде - цена вопроса",
+        "name": "guide-senegal",
+        "language": "ru"
+    },
+	"en-guide-senegal": {
+        "date": "08/10/2024",
+        "title": "Senegal, Gambia, Cabo Verde travel guide",
+        "name": "guide-senegal",
         "language": "en"
     }
 }
