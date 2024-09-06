@@ -35,7 +35,7 @@ const FeedPage = () => {
             <Link to={`/${language}/post/${post.id}`}>{post.title}</Link>
           </div>
           <div className="text-[12px]">{post.date}</div>
-          <div dangerouslySetInnerHTML={{ __html: post.preview }}></div>
+          <div dangerouslySetInnerHTML={{ __html: post.preview.replace(/\n/g, "<br/>") }}></div>
           <div>
             <Link to={`/${language}/post/${post.id}`}>
               {language === "en" ? "Read more..." : "Читать дальше..."}

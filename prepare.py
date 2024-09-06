@@ -130,6 +130,8 @@ def load_trip(name, lang="ru"):
             result["content"].append({"type": "text", "src": p})
     preview = []
     for e in result["content"]:
+        if e["type"] == "section":
+            continue
         if e["type"] != "image":
             preview.append(e["src"])
         else:
