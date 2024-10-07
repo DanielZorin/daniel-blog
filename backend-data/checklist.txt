@@ -4,15 +4,6 @@ Tbilisi-Dighomi
 Tbilisi-Ortachala
 Mtskheta
 Tsalka
-Hargeisa
-Somaliland road
-Berbera
-Jijiga
-Harar
-Dire Dawa
-Ethiopia train
-Adama
-Addis Ababa
 Bujumbura
 Gitega
 Muyinga
@@ -64,14 +55,23 @@ Catania
 Siracusa
 Tirana
 guide Albania
+Antalya-september
+Kemer
+Qatar
+Sao Paulo
+Buenos Aires - Recoleta
+Buenos Aires - Balvanera
+Buenos Aires - Puerto Madero
+Buenos Aires - San Nicolas
 ==========================
-guide China
-guide Turkey
-guide Ethiopia
-guide Uganda
-guide Kenya
-guide Tanzania
-guide Cameroon
-guide Senegal
+Antalya-april
 Dubai
-Antalya
+Hargeisa
+Somaliland road
+Berbera
+Jijiga
+Harar
+Dire Dawa
+Ethiopia train
+Adama
+Addis Ababa
