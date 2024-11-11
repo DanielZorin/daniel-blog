@@ -3,13 +3,19 @@ import mapworld from "../assets/map-world.png";
 import mapregions from "../assets/divisions-me.png";
 import maproutes from "../assets/routes-generated.png";
 import useLanguage from "../redux/use-language";
+import { Helmet } from "react-helmet";
 
 const StatsPage = () => {
   const { language } = useLanguage();
   return (
     <>
+      <Helmet>
+        <title>Stats - Daniel A. Zorin</title>
+      </Helmet>
       <div align="center" className="p-3">
-        {language === "ru" ? "Страны, в которых я был:" : "Countries I visited:"}
+        {language === "ru"
+          ? "Страны, в которых я был:"
+          : "Countries I visited:"}
         <img src={mapworld} alt="Карта мира" width="100%" />
       </div>
       <div align="center" className="p-3">

@@ -234,12 +234,15 @@ def prepare_list(lang = "ru"):
     #f.close()  
     return names, result
 
-def generate_sitemap(lang):
-    res = ["", "map", "list", "plans", "contacts"]
-    for trip in sorted(os.listdir("backend-data/trip-" + lang)):
-        index = trip.replace(".html", "")
-        res.append("trip/" + index + "?lang=" + lang)
-    res = ["http://www.danielzorin.gq/" + s for s in res]
+def generate_sitemap(posts):
+    links = []
+    for lang in ["en", "ru"]:
+        res = ["", "map", "list", "plans", "contacts"]
+        for trip in posts.keys():
+            res.append(trip[3:])
+        for t in res:
+            links.append(lang + "/post/" + t)
+    res = ["http://danielzorin.mywire.org/" + s for s in links]
     f = open("./public/sitemap.txt", "w")
     f.write("\n".join(res))
     f.close()
@@ -397,4 +400,4 @@ if __name__ == "__main__":
         key = posts[post]["language"] + "/posts/" + post
         ref.update({key: posts[post]})
         
-    generate_sitemap("ru")
+    generate_sitemap(posts)

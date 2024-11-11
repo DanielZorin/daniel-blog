@@ -1,31 +1,3 @@
-Tbilisi
-Tbilisi-Elia
-Tbilisi-Dighomi
-Tbilisi-Ortachala
-Mtskheta
-Tsalka
-Bujumbura
-Gitega
-Muyinga
-Ngara
-Rwanda road
-Kigali
-Mbarara
-Kampala
-Jinja
-Kisumu
-Nakuru
-Lake Nakuru
-Nairobi
-Kenya train
-Mombasa
-Mombasa-2
-Voi
-Arusha
-Zanzibar
-Zanzibar-2
-Zanzibar-3
-Dar es Salaam
 Douala
 Douala-food
 Limbe
@@ -33,15 +5,19 @@ Yaounde
 Cameroon train
 Dakar
 Dakar-2
+Dakar-3
 Mbour
 Bandia
 Serekunda
 Banjul
 Praia
 Cidade Velha
-Lisboa
-Santarem
-Porto
+Tbilisi
+Tbilisi-Elia
+Tbilisi-Dighomi
+Tbilisi-Ortachala
+Mtskheta
+Tsalka
 guide Portugal
 Verona
 Olbia
@@ -53,25 +29,41 @@ Messina
 Reggio Calabria
 Catania
 Siracusa
-Tirana
 guide Albania
+Buenos Aires - Recoleta
+Buenos Aires - Balvanera
+Buenos Aires - Puerto Madero
+Buenos Aires - Retiro
+Buenos Aires - San Nicolas
+Buenos Aires - Palermo
+Buenos Aires - Belgrano
+Buenos Aires - Colegiales
+Buenos Aires - Nunez
+Buenos Aires - Coghlan
+Buenos Aires - Almagro
+Buenos Aires - Villa Pueyrredon
+Buenos Aires - Villa Lugano
+Buenos Aires - Villa Soldati
+Buenos Aires - Villa Riachuelo
+==========================
+Kisumu
+Nakuru
+Lake Nakuru
+Nairobi
+Kenya train
+Mombasa
+Voi
+Arusha
+Zanzibar
+Zanzibar-2
+Zanzibar-3
+Dar es Salaam
+Lisboa
+Santarem
+Porto
+Tirana
+Antalya-april
 Antalya-september
 Kemer
 Qatar
 Sao Paulo
-Buenos Aires - Recoleta
-Buenos Aires - Balvanera
-Buenos Aires - Puerto Madero
-Buenos Aires - San Nicolas
-==========================
-Antalya-april
-Dubai
-Hargeisa
-Somaliland road
-Berbera
-Jijiga
-Harar
-Dire Dawa
-Ethiopia train
-Adama
-Addis Ababa
