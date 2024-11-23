@@ -1,3 +1,46 @@
+guide Portugal
+guide Albania
+Buenos Aires - 2 Recoleta
+Buenos Aires - 3 Balvanera
+Buenos Aires - 3 San Cristobal
+Buenos Aires - 1 Puerto Madero
+Buenos Aires - 1 Retiro
+Buenos Aires - 1 San Nicolas
+Buenos Aires - 1 Monserrat
+Buenos Aires - 1 San Telmo
+Buenos Aires - 1 Constitucion
+Buenos Aires - 4 Parque Patricios
+Buenos Aires - 4 La Boca
+Buenos Aires - 4 Barracas
+Buenos Aires - 4 Nueva Pompeya
+Buenos Aires - 5 Almagro
+Buenos Aires - 6 Caballito
+Buenos Aires - 8 Villa Lugano
+Buenos Aires - 8 Villa Soldati
+Buenos Aires - 8 Villa Riachuelo
+Buenos Aires - 10 Villa Real
+Buenos Aires - 10 Versalles
+Buenos Aires - 11 Villa Devoto
+Buenos Aires - 12 Coghlan
+Buenos Aires - 12 Villa Pueyrredon
+Buenos Aires - 13 Belgrano
+Buenos Aires - 13 Colegiales
+Buenos Aires - 13 Nunez
+Buenos Aires - 14 Palermo-1
+Buenos Aires - 14 Palermo-2
+==========================
+Kisumu
+Nakuru
+Lake Nakuru
+Nairobi
+Kenya train
+Mombasa
+Voi
+Arusha
+Zanzibar
+Zanzibar-2
+Zanzibar-3
+Dar es Salaam
 Douala
 Douala-food
 Limbe
@@ -18,7 +61,9 @@ Tbilisi-Dighomi
 Tbilisi-Ortachala
 Mtskheta
 Tsalka
-guide Portugal
+Lisboa
+Santarem
+Porto
 Verona
 Olbia
 Oristano
@@ -29,38 +74,6 @@ Messina
 Reggio Calabria
 Catania
 Siracusa
-guide Albania
-Buenos Aires - Recoleta
-Buenos Aires - Balvanera
-Buenos Aires - Puerto Madero
-Buenos Aires - Retiro
-Buenos Aires - San Nicolas
-Buenos Aires - Palermo
-Buenos Aires - Belgrano
-Buenos Aires - Colegiales
-Buenos Aires - Nunez
-Buenos Aires - Coghlan
-Buenos Aires - Almagro
-Buenos Aires - Villa Pueyrredon
-Buenos Aires - Villa Lugano
-Buenos Aires - Villa Soldati
-Buenos Aires - Villa Riachuelo
-==========================
-Kisumu
-Nakuru
-Lake Nakuru
-Nairobi
-Kenya train
-Mombasa
-Voi
-Arusha
-Zanzibar
-Zanzibar-2
-Zanzibar-3
-Dar es Salaam
-Lisboa
-Santarem
-Porto
 Tirana
 Antalya-april
 Antalya-september
